@@ -2,21 +2,21 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 import Layout from '../components/layout';
+import Header from '../components/Header';
 
 const IndexPage: React.FC = () => {
   return (
     <Layout>
+      <Header />
       <main>
-        <title>Home Page</title>
-        <h1 css={h1}>Web Page</h1>
+        <div>MainVisual</div>
+        <div>About</div>
+        <div>Skills</div>
+        <div>Contact</div>
       </main>
+      <footer>Footer</footer>
     </Layout>
   );
 };
-
-const h1 = css`
-  background-color: gray;
-  color: #eee;
-`;
 
 export default IndexPage;
