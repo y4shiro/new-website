@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       </h1>
 
       <nav>
-        <ul css={ul}>
+        <ul css={navmenu}>
           <li>
             <a href="#">About</a>
           </li>
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
 };
 
 const header = css`
-  background-color: white;
+  background-color: #2a2a2a;
   padding: 16px 30px;
   margin: 0;
   display: flex;
@@ -38,7 +38,7 @@ const header = css`
 const anchor = css`
   a {
     text-decoration: none;
-    color: #4b4b4b;
+    color: #eee;
   }
 `;
 
@@ -49,7 +49,7 @@ const titleLogo = css`
   font-size: 1.5em;
 `;
 
-const ul = css`
+const navmenu = css`
   display: flex;
   list-style: none;
 
