@@ -1,16 +1,19 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://y4shiro.net",
-    title: "website",
+    siteUrl: 'https://y4shiro.net',
+    title: 'website',
   },
   plugins: [
-    "gatsby-plugin-emotion",
+    'gatsby-plugin-emotion',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-76076401-1",
+        trackingId: 'UA-76076401-1',
       },
     },
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
