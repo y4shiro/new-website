@@ -3,13 +3,14 @@ import { css } from '@emotion/react';
 
 import Layout from '../components/layout';
 import Header from '../components/Header';
+import Mainvisual from '../components/Mainvisual';
 
 const IndexPage: React.FC = () => {
   return (
     <Layout>
       <Header />
       <main>
-        <div>MainVisual</div>
+        <Mainvisual />
         <div>About</div>
         <div>Skills</div>
         <div>Contact</div>
