@@ -10,21 +10,29 @@ const Mainvisual: React.FC = () => {
         css={image}
         src="../images/mbp.jpg"
         alt="Mainvisual"
-      ></StaticImage>
-      <h2 css={logo}>y4shiro's Portfolio</h2>
+        placeholder="blurred"
+      />
+      <div css={logo}>
+        <h2>y4shiro's Portfolio</h2>
+      </div>
     </section>
   );
 };
 
 const mainvisual = css`
-  position: relative;
+  display: grid;
 `;
 
 const image = css`
+  grid-area: 1/1;
   opacity: 0.7;
 `;
 
 const logo = css`
+  display: grid;
+  grid-area: 1/1;
+  position: relative;
+  place-items: center;
   font-size: 2rem;
 `;
 
