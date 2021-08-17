@@ -50,7 +50,7 @@ const logo = css`
   ${anchor}; // anchor 継承
   margin: 0;
   padding: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 `;
 
 const navmenu = css`

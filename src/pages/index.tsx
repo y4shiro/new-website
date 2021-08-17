@@ -14,11 +14,13 @@ const IndexPage: React.FC = () => {
     <Layout>
       <Header />
       <Mainvisual />
+
       <main css={wrapper}>
         <About />
         <Skills />
         <Contact />
       </main>
+
       <Footer />
     </Layout>
   );

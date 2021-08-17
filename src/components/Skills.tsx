@@ -1,10 +1,11 @@
 import React from 'react';
 import { css } from '@emotion/react';
+import { SectionTitle } from '../styles/Styles';
 
 const Skills: React.FC = () => {
   return (
     <section>
-      <h2>Skills</h2>
+      <h2 css={SectionTitle}>Skills</h2>
       <ul>
         <li>JavaScript</li>
         <li>TypeScript</li>
