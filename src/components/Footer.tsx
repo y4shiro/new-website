@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
 };
 
 const footer = css`
-  padding: 30px;
+  padding: 20px 0;
   text-align: center;
   background-color: #222;
   color: #ddd;
