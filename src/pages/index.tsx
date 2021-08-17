@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Mainvisual from '../components/Mainvisual';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import Contact from '../components/Contact';
 
 const IndexPage: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const IndexPage: React.FC = () => {
       <main css={wrapper}>
         <About />
         <Skills />
-        <div>Contact</div>
+        <Contact />
       </main>
       <footer>Footer</footer>
     </Layout>
