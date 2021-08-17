@@ -8,14 +8,18 @@ const Layout: React.FC = ({ children }) => {
       <Global
         styles={css`
           ${emotionNormalize}
-          body {
-            background-color: #e6e6e6;
-          }
+          ${globalStyles}
         `}
       ></Global>
       {children}
     </>
   );
 };
+
+const globalStyles = css`
+  body {
+    background-color: #e6e6e6;
+  }
+`;
 
 export default Layout;
