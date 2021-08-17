@@ -7,6 +7,7 @@ import Mainvisual from '../components/Mainvisual';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const IndexPage: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const IndexPage: React.FC = () => {
         <Skills />
         <Contact />
       </main>
-      <footer>Footer</footer>
+      <Footer />
     </Layout>
   );
 };
