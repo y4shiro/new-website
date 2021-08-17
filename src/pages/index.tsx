@@ -1,17 +1,18 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Mainvisual from '../components/Mainvisual';
+import About from '../components/About';
 
 const IndexPage: React.FC = () => {
   return (
     <Layout>
       <Header />
-      <main>
-        <Mainvisual />
-        <div>About</div>
+      <Mainvisual />
+      <main css={wrapper}>
+        <About />
         <div>Skills</div>
         <div>Contact</div>
       </main>
@@ -19,5 +20,10 @@ const IndexPage: React.FC = () => {
     </Layout>
   );
 };
+
+const wrapper = css`
+  max-width: 768px;
+  margin: 0 auto;
+`;
 
 export default IndexPage;
