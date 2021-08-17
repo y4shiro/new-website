@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 const Header: React.FC = () => {
   return (
     <header css={header}>
-      <h1 css={titleLogo}>
+      <h1 css={logo}>
         <a href="/">y4shiro.net</a>
       </h1>
 
@@ -25,6 +25,18 @@ const Header: React.FC = () => {
   );
 };
 
+// a タグのスタイルは複数箇所で使用するので、header から分離した
+const anchor = css`
+  a {
+    text-decoration: none;
+    color: #eee;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+`;
+
 const header = css`
   background-color: #2a2a2a;
   padding: 16px 30px;
@@ -34,15 +46,7 @@ const header = css`
   justify-content: space-between;
 `;
 
-// a タグのスタイルは複数箇所で使用するので、header から分離した
-const anchor = css`
-  a {
-    text-decoration: none;
-    color: #eee;
-  }
-`;
-
-const titleLogo = css`
+const logo = css`
   ${anchor}; // anchor 継承
   margin: 0;
   padding: 0;
@@ -57,10 +61,6 @@ const navmenu = css`
     ${anchor}; // anchor 継承
     margin-left: 15px;
     font-size: 0.9em;
-
-    &:hover {
-      opacity: 0.7;
-    }
   }
 `;
 
