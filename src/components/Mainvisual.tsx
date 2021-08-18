@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 import { StaticImage } from 'gatsby-plugin-image';
+import { breakpoints } from '../styles/styles';
 
 const Mainvisual: React.FC = () => {
   return (
@@ -46,9 +47,16 @@ const logo = css`
   grid-area: 1/1;
   position: relative;
   place-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ddd;
   z-index: 20;
+
+  @media (min-width: ${breakpoints.sm}px) {
+    font-size: 2rem;
+  }
+  @media (min-width: ${breakpoints.lg}px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export default Mainvisual;
