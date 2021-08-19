@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Mainvisual from '../components/Mainvisual';
+import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
@@ -13,7 +13,7 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <Header />
-      <Mainvisual />
+      <Hero />
 
       <main css={wrapper}>
         <About />

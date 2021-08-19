@@ -4,9 +4,9 @@ import { css } from '@emotion/react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../styles/styles';
 
-const Mainvisual: React.FC = () => {
+const Hero: React.FC = () => {
   return (
-    <section css={mainvisual}>
+    <section css={hero}>
       <StaticImage
         css={image}
         src="../images/mbp.jpg"
@@ -21,7 +21,7 @@ const Mainvisual: React.FC = () => {
   );
 };
 
-const mainvisual = css`
+const hero = css`
   display: grid;
   height: 100vh;
 `;
@@ -59,4 +59,4 @@ const logo = css`
   }
 `;
 
-export default Mainvisual;
+export default Hero;
