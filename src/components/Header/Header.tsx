@@ -1,6 +1,8 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
+import HamburgerButton from './HamburgerButton';
+
 const Header: React.FC = () => {
   return (
     <header css={header}>
@@ -21,6 +23,8 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+
+      <HamburgerButton />
     </header>
   );
 };

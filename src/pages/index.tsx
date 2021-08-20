@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 import Layout from '../components/Layout';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
