@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { css } from '@emotion/react';
 import { breakpoints } from '../../styles/styles';
 
-const HamburgerButton: React.FC = () => {
-  const [open, setOpen] = useState(false);
+type Props = {
+  open: boolean;
+  setOpen: Function;
+};
 
+const HamburgerButton: React.FC<Props> = ({ open, setOpen }) => {
   const onClickHandler = () => setOpen(!open);
 
   return (
@@ -18,7 +21,7 @@ const HamburgerButton: React.FC = () => {
   );
 };
 
-const hamburgerStyle = (isOpen: boolean) => {
+const hamburgerStyle = (open: boolean) => {
   return css`
     display: flex;
     flex-direction: column;
@@ -42,14 +45,14 @@ const hamburgerStyle = (isOpen: boolean) => {
       transition: all 0.3s ease-out;
 
       &:nth-of-type(1) {
-        transform: ${isOpen ? 'rotate(45deg)' : 'rotate(0)'};
+        transform: ${open ? 'rotate(45deg)' : 'rotate(0)'};
       }
       &:nth-of-type(2) {
-        transform: ${isOpen ? 'translateX(100%)' : 'translateX(0)'};
-        opacity: ${isOpen ? 0 : 1};
+        transform: ${open ? 'translateX(100%)' : 'translateX(0)'};
+        opacity: ${open ? 0 : 1};
       }
       &:nth-of-type(3) {
-        transform: ${isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
+        transform: ${open ? 'rotate(-45deg)' : 'rotate(0)'};
       }
     }
   `;

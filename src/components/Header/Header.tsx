@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { css } from '@emotion/react';
 
 import HamburgerButton from './HamburgerButton';
 
 const Header: React.FC = () => {
+  // ハンバーガーメニューの開閉管理
+  const [open, setOpen] = useState(false);
+
   return (
     <header css={header}>
       <h1 css={logo}>
@@ -24,7 +27,7 @@ const Header: React.FC = () => {
         </ul>
       </nav>
 
-      <HamburgerButton />
+      <HamburgerButton open={open} setOpen={setOpen} />
     </header>
   );
 };
