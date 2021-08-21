@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
+import { breakpoints } from '../styles/styles';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header/Header';
@@ -27,8 +28,16 @@ const IndexPage: React.FC = () => {
 };
 
 const wrapper = css`
-  max-width: 768px;
+  max-width: 480px;
   margin: 0 auto;
+
+  @media (min-width: ${breakpoints.sm}px) {
+    max-width: 576px;
+  }
+
+  @media (min-width: ${breakpoints.md}px) {
+    max-width: 768px;
+  }
 `;
 
 export default IndexPage;
