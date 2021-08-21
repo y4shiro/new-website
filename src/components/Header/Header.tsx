@@ -15,7 +15,7 @@ const Header: React.FC = () => {
       </h1>
 
       <HamburgerMenu open={open} setOpen={setOpen} anchorStyle={anchorStyle} />
-      <HamburgerButton open={open} setOpen={setOpen} />
+      {/* <HamburgerButton open={open} setOpen={setOpen} /> */}
     </header>
   );
 };
