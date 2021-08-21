@@ -1,0 +1,51 @@
+{
+  "title": "Skills",
+  "language": [
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "TypeScript"
+    },
+    {
+      "name": "Ruby"
+    },
+    {
+      "name": "HTML5"
+    },
+    {
+      "name": "CSS3"
+    },
+    {
+      "name": "PHP"
+    },
+    {
+      "name": "C#"
+    }
+  ],
+  "flamework": [
+    {
+      "name": "React.js"
+    },
+    {
+      "name": "Vue.js"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "Ruby on Rails"
+    }
+  ],
+  "other": [
+    {
+      "name": "Node.js"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "AWS"
+    }
+  ]
+}

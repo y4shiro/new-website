@@ -8,6 +8,7 @@
     "strict": true,
     "esModuleInterop": true,
     "baseUrl": ".",
-    "jsxImportSource": "@emotion/react"
+    "jsxImportSource": "@emotion/react",
+    "resolveJsonModule": true
   }
 }
