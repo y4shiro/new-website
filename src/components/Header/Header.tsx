@@ -2,38 +2,26 @@ import React, { useState } from 'react';
 import { css } from '@emotion/react';
 
 import HamburgerButton from './HamburgerButton';
+import HamburgerMenu from './HamburgerMenu';
 
 const Header: React.FC = () => {
   // ハンバーガーメニューの開閉管理
   const [open, setOpen] = useState(false);
 
   return (
-    <header css={header}>
-      <h1 css={logo}>
+    <header css={headerStyle}>
+      <h1 css={logoStyle}>
         <a href="/">y4shiro.net</a>
       </h1>
 
-      <nav>
-        <ul css={navmenu}>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Skills</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
+      <HamburgerMenu open={open} setOpen={setOpen} anchorStyle={anchorStyle} />
       <HamburgerButton open={open} setOpen={setOpen} />
     </header>
   );
 };
 
 // a タグのスタイルは複数箇所で使用するので、header から分離した
-const anchor = css`
+const anchorStyle = css`
   a {
     text-decoration: none;
     color: #eee;
@@ -44,7 +32,7 @@ const anchor = css`
   }
 `;
 
-const header = css`
+const headerStyle = css`
   background-color: #2a2a2a;
   padding: 16px 30px;
   margin: 0;
@@ -53,22 +41,11 @@ const header = css`
   justify-content: space-between;
 `;
 
-const logo = css`
-  ${anchor}; // anchor 継承
+const logoStyle = css`
+  ${anchorStyle}; // anchor 継承
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-`;
-
-const navmenu = css`
-  display: flex;
-  list-style: none;
-
-  li {
-    ${anchor}; // anchor 継承
-    margin-left: 15px;
-    font-size: 0.9em;
-  }
 `;
 
 export default Header;
