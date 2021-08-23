@@ -11,16 +11,20 @@ const Skills: React.FC = () => {
     <section>
       <h2 css={sectionTitle}>Skills</h2>
 
-      <h3>Language</h3>
+      <h3 css={skillTitleStyle}>Language</h3>
       <SkillList skillList={skills.language} />
 
-      <h3>Flamework</h3>
+      <h3 css={skillTitleStyle}>Flamework</h3>
       <SkillList skillList={skills.flamework} />
 
-      <h3>Other</h3>
+      <h3 css={skillTitleStyle}>Other</h3>
       <SkillList skillList={skills.other} />
     </section>
   );
 };
+
+const skillTitleStyle = css`
+  margin-bottom: 32px;
+`;
 
 export default Skills;

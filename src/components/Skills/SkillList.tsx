@@ -37,7 +37,7 @@ const ulStyles = css`
 `;
 
 const liStyles = css`
-  width: 30%;
+  width: 46%;
   padding: 4px;
   background-color: #fafafa;
   list-style: none;
