@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Skills from '../components/Skills';
+import Skills from '../components/Skills/Skills';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 

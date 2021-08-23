@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-import { sectionTitle } from '../styles/styles';
+import { sectionTitle } from 'src/styles/styles';
 
-import skills from '../content/skills.json';
+import skills from 'src/content/skills.json';
 
 const Skills: React.FC = () => {
   return (
