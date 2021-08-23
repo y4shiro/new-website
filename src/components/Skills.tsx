@@ -13,24 +13,40 @@ const Skills: React.FC = () => {
       <h3>Language</h3>
       <ul>
         {skills.language.map((skill) => (
-          <li>{skill.name}</li>
+          <Skill name={skill.name} iconPath={skill.iconPath} key={skill.name} />
         ))}
       </ul>
 
       <h3>Flamework</h3>
       <ul>
         {skills.flamework.map((skill) => (
-          <li>{skill.name}</li>
+          <Skill name={skill.name} iconPath={skill.iconPath} key={skill.name} />
         ))}
       </ul>
 
       <h3>Other</h3>
       <ul>
         {skills.other.map((skill) => (
-          <li>{skill.name}</li>
+          <Skill name={skill.name} iconPath={skill.iconPath} key={skill.name} />
         ))}
       </ul>
     </section>
+  );
+};
+
+type skillProps = {
+  name: string;
+  iconPath: string;
+};
+
+const Skill: React.FC<skillProps> = ({ name, iconPath }) => {
+  const src = `/skillIcons/${iconPath}.svg`;
+
+  return (
+    <li>
+      <p>{name}</p>
+      <img src={src} width="32px" alt="" />
+    </li>
   );
 };
 

@@ -2,50 +2,64 @@
   "title": "Skills",
   "language": [
     {
-      "name": "JavaScript"
+      "name": "JavaScript",
+      "iconPath": "javascript"
     },
     {
-      "name": "TypeScript"
+      "name": "TypeScript",
+      "iconPath": "typescript"
     },
     {
-      "name": "Ruby"
+      "name": "Ruby",
+      "iconPath": "ruby"
     },
     {
-      "name": "HTML5"
+      "name": "HTML5",
+      "iconPath": "html5"
     },
     {
-      "name": "CSS3"
+      "name": "CSS3",
+      "iconPath": "css3"
     },
     {
-      "name": "PHP"
+      "name": "PHP",
+      "iconPath": "php"
     },
     {
-      "name": "C#"
+      "name": "C#",
+      "iconPath": "csharp"
     }
   ],
   "flamework": [
     {
-      "name": "React.js"
+      "name": "React.js",
+      "iconPath": "react"
     },
     {
-      "name": "Vue.js"
+      "name": "Vue.js",
+      "iconPath": "vuedotjs"
     },
     {
-      "name": "Express"
+      "name": "Express",
+      "iconPath": "express"
     },
     {
-      "name": "Ruby on Rails"
+      "name": "Ruby on Rails",
+      "iconPath": "rubyonrails"
     }
   ],
   "other": [
     {
-      "name": "Node.js"
+      "name": "Node.js",
+      "iconPath": "nodedotjs"
     },
     {
-      "name": "Linux"
+      "name": "Linux",
+      "iconPath": "linux"
     },
     {
-      "name": "AWS"
+      "name": "AWS",
+      "iconPath": "amazonaws"
     }
   ]
 }
