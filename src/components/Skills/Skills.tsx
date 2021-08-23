@@ -1,8 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-import { sectionTitle } from 'src/styles/styles';
+import Skill from './Skill';
 
+import { sectionTitle } from 'src/styles/styles';
 import skills from 'src/content/skills.json';
 
 const Skills: React.FC = () => {
@@ -31,22 +32,6 @@ const Skills: React.FC = () => {
         ))}
       </ul>
     </section>
-  );
-};
-
-type skillProps = {
-  name: string;
-  iconPath: string;
-};
-
-const Skill: React.FC<skillProps> = ({ name, iconPath }) => {
-  const src = `/skillIcons/${iconPath}.svg`;
-
-  return (
-    <li>
-      <p>{name}</p>
-      <img src={src} width="32px" alt="" />
-    </li>
   );
 };
 
