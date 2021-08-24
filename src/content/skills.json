@@ -30,7 +30,7 @@
       "iconPath": "csharp"
     }
   ],
-  "flamework": [
+  "framework": [
     {
       "name": "React.js",
       "iconPath": "react"

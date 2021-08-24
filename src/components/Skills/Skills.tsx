@@ -14,8 +14,8 @@ const Skills: React.FC = () => {
       <h3 css={skillTitleStyle}>Language</h3>
       <SkillList skillList={skills.language} />
 
-      <h3 css={skillTitleStyle}>Flamework</h3>
-      <SkillList skillList={skills.flamework} />
+      <h3 css={skillTitleStyle}>Framework / Library</h3>
+      <SkillList skillList={skills.framework} />
 
       <h3 css={skillTitleStyle}>Other</h3>
       <SkillList skillList={skills.other} />
