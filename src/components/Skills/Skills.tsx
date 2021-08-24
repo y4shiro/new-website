@@ -7,18 +7,21 @@ import { sectionTitle } from 'src/styles/styles';
 import skills from 'src/content/skills.json';
 
 const Skills: React.FC = () => {
+  const marginParams = { bottom: 64 };
+  console.log(skills.language);
+
   return (
     <section>
       <h2 css={sectionTitle}>Skills</h2>
 
       <h3 css={skillTitleStyle}>Language</h3>
-      <SkillList skillList={skills.language} />
+      <SkillList margin={marginParams} skillList={skills.language} />
 
       <h3 css={skillTitleStyle}>Framework / Library</h3>
-      <SkillList skillList={skills.framework} />
+      <SkillList margin={marginParams} skillList={skills.framework} />
 
       <h3 css={skillTitleStyle}>Other</h3>
-      <SkillList skillList={skills.other} />
+      <SkillList margin={marginParams} skillList={skills.other} />
     </section>
   );
 };

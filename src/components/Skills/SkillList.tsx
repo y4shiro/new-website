@@ -1,16 +1,25 @@
 import React from 'react';
 import { css } from '@emotion/react';
 
-type skillProps = {
+type Margin = {
+  margin: Partial<{
+    top: number;
+    bottom: number;
+    left: number;
+    right: number;
+  }>;
+};
+
+type SkillList = {
   skillList: {
     name: string;
     iconPath: string;
   }[];
 };
 
-const NewSkill: React.FC<skillProps> = ({ skillList }) => {
+const SkillList: React.FC<Margin & SkillList> = ({ margin, skillList }) => {
   return (
-    <ul css={ulStyles}>
+    <ul css={[ulStyles, marginStyle({ margin })]}>
       {skillList.map((skill) => {
         const src = `/skillIcons/${skill.iconPath}.svg`;
 
@@ -25,6 +34,20 @@ const NewSkill: React.FC<skillProps> = ({ skillList }) => {
       })}
     </ul>
   );
+};
+
+const marginStyle = ({ margin }: Margin) => {
+  const top = margin.top ?? 0;
+  const bottom = margin.bottom ?? 0;
+  const left = margin.left ?? 0;
+  const right = margin.right ?? 0;
+
+  return css`
+    margin-top: ${top}px;
+    margin-bottom: ${bottom}px;
+    margin-left: ${left}px;
+    margin-right: ${right}px;
+  `;
 };
 
 const ulStyles = css`
@@ -64,4 +87,4 @@ const liStyles = css`
   }
 `;
 
-export default NewSkill;
+export default SkillList;
