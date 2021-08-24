@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
+import SkillItem from './SkillItem';
 
 type Margin = {
   margin?: Partial<{
@@ -26,16 +27,7 @@ const SkillList: React.FC<Margin & SkillList> = ({ margin, skillList }) => {
       <h3 css={skillTitleStyle}>{skillList.title}</h3>
       <ul css={[ulStyles, marginStyle({ margin })]}>
         {skillList.list.map((skill) => {
-          const iconPath = `/skillIcons/${skill.iconPath}.svg`;
-
-          return (
-            <li css={liStyles} key={skill.name}>
-              <div>
-                <p>{skill.name}</p>
-                <img src={iconPath} alt="" />
-              </div>
-            </li>
-          );
+          <SkillItem {...skill} />;
         })}
       </ul>
     </>
