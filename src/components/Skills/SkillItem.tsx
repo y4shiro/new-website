@@ -7,13 +7,13 @@ type Skill = {
 };
 
 const SkillItem: React.FC<Skill> = ({ name, iconPath }) => {
-  const iconPathSrc = `/skillIcons/${iconPath}.svg`;
+  const iconSrc = `/skillIcons/${iconPath}.svg`;
 
   return (
     <li css={liStyles} key={name}>
       <div>
         <p>{name}</p>
-        <img src={iconPathSrc} alt="" />
+        <img src={iconSrc} alt="" />
       </div>
     </li>
   );
