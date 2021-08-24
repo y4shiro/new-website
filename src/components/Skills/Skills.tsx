@@ -12,9 +12,9 @@ const Skills: React.FC = () => {
     <section>
       <h2 css={sectionTitle}>Skills</h2>
 
-      <SkillList margin={marginParams} skillList={skills.language} />
-      <SkillList margin={marginParams} skillList={skills.framework} />
-      <SkillList margin={marginParams} skillList={skills.other} />
+      <SkillList margin={marginParams} {...skills.language} />
+      <SkillList margin={marginParams} {...skills.framework} />
+      <SkillList margin={marginParams} {...skills.other} />
     </section>
   );
 };

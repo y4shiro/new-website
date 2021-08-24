@@ -12,21 +12,19 @@ type Margin = {
 };
 
 type SkillList = {
-  skillList: {
-    title: string;
-    list: {
-      name: string;
-      iconPath: string;
-    }[];
-  };
+  title: string;
+  list: {
+    name: string;
+    iconPath: string;
+  }[];
 };
 
-const SkillList: React.FC<Margin & SkillList> = ({ margin, skillList }) => {
+const SkillList: React.FC<Margin & SkillList> = ({ margin, title, list }) => {
   return (
     <>
-      <h3 css={skillTitleStyle}>{skillList.title}</h3>
+      <h3 css={skillTitleStyle}>{title}</h3>
       <ul css={[ulStyles, marginStyle({ margin })]}>
-        {skillList.list.map((skill) => {
+        {list.map((skill) => {
           <SkillItem {...skill} />;
         })}
       </ul>
