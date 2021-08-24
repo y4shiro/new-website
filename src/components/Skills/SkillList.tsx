@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 type Margin = {
-  margin: Partial<{
+  margin?: Partial<{
     top: number;
     bottom: number;
     left: number;
@@ -12,35 +12,46 @@ type Margin = {
 
 type SkillList = {
   skillList: {
-    name: string;
-    iconPath: string;
-  }[];
+    title: string;
+    list: {
+      name: string;
+      iconPath: string;
+    }[];
+  };
 };
 
 const SkillList: React.FC<Margin & SkillList> = ({ margin, skillList }) => {
   return (
-    <ul css={[ulStyles, marginStyle({ margin })]}>
-      {skillList.map((skill) => {
-        const src = `/skillIcons/${skill.iconPath}.svg`;
+    <>
+      <h3 css={skillTitleStyle}>{skillList.title}</h3>
+      <ul css={[ulStyles, marginStyle({ margin })]}>
+        {skillList.list.map((skill) => {
+          const iconPath = `/skillIcons/${skill.iconPath}.svg`;
 
-        return (
-          <li css={liStyles} key={skill.name}>
-            <div>
-              <p>{skill.name}</p>
-              <img src={src} alt="" />
-            </div>
-          </li>
-        );
-      })}
-    </ul>
+          return (
+            <li css={liStyles} key={skill.name}>
+              <div>
+                <p>{skill.name}</p>
+                <img src={iconPath} alt="" />
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </>
   );
 };
+const skillTitleStyle = css`
+  margin-bottom: 32px;
+`;
 
+// 親からマージンの指定を受ける
+// 何も指定がない場合は margin: 0;
 const marginStyle = ({ margin }: Margin) => {
-  const top = margin.top ?? 0;
-  const bottom = margin.bottom ?? 0;
-  const left = margin.left ?? 0;
-  const right = margin.right ?? 0;
+  const top = margin?.top ?? 0;
+  const bottom = margin?.bottom ?? 0;
+  const left = margin?.left ?? 0;
+  const right = margin?.right ?? 0;
 
   return css`
     margin-top: ${top}px;

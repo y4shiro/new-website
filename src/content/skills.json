@@ -1,65 +1,73 @@
 {
-  "title": "Skills",
-  "language": [
-    {
-      "name": "JavaScript",
-      "iconPath": "javascript"
-    },
-    {
-      "name": "TypeScript",
-      "iconPath": "typescript"
-    },
-    {
-      "name": "Ruby",
-      "iconPath": "ruby"
-    },
-    {
-      "name": "HTML5",
-      "iconPath": "html5"
-    },
-    {
-      "name": "CSS3",
-      "iconPath": "css3"
-    },
-    {
-      "name": "PHP",
-      "iconPath": "php"
-    },
-    {
-      "name": "C#",
-      "iconPath": "csharp"
-    }
-  ],
-  "framework": [
-    {
-      "name": "React.js",
-      "iconPath": "react"
-    },
-    {
-      "name": "Vue.js",
-      "iconPath": "vuedotjs"
-    },
-    {
-      "name": "Express",
-      "iconPath": "express"
-    },
-    {
-      "name": "Ruby on Rails",
-      "iconPath": "rubyonrails"
-    }
-  ],
-  "other": [
-    {
-      "name": "Node.js",
-      "iconPath": "nodedotjs"
-    },
-    {
-      "name": "Linux",
-      "iconPath": "linux"
-    },
-    {
-      "name": "AWS",
-      "iconPath": "amazonaws"
-    }
-  ]
+  "language": {
+    "title": "Language",
+    "list": [
+      {
+        "name": "JavaScript",
+        "iconPath": "javascript"
+      },
+      {
+        "name": "TypeScript",
+        "iconPath": "typescript"
+      },
+      {
+        "name": "Ruby",
+        "iconPath": "ruby"
+      },
+      {
+        "name": "HTML5",
+        "iconPath": "html5"
+      },
+      {
+        "name": "CSS3",
+        "iconPath": "css3"
+      },
+      {
+        "name": "PHP",
+        "iconPath": "php"
+      },
+      {
+        "name": "C#",
+        "iconPath": "csharp"
+      }
+    ]
+  },
+  "framework": {
+    "title": "Framework / Library",
+    "list": [
+      {
+        "name": "React.js",
+        "iconPath": "react"
+      },
+      {
+        "name": "Vue.js",
+        "iconPath": "vuedotjs"
+      },
+      {
+        "name": "Express",
+        "iconPath": "express"
+      },
+      {
+        "name": "Ruby on Rails",
+        "iconPath": "rubyonrails"
+      }
+    ]
+  },
+  "other": {
+    "title": "Other",
+    "list": [
+      {
+        "name": "Node.js",
+        "iconPath": "nodedotjs"
+      },
+      {
+        "name": "Linux",
+        "iconPath": "linux"
+      },
+      {
+        "name": "AWS",
+        "iconPath": "amazonaws"
+      }
+    ]
+  }
 }
