@@ -24,9 +24,9 @@ const SkillList: React.FC<Margin & SkillList> = ({ margin, title, list }) => {
     <>
       <h3 css={skillTitleStyle}>{title}</h3>
       <ul css={[ulStyles, marginStyle({ margin })]}>
-        {list.map((skill) => {
-          <SkillItem {...skill} />;
-        })}
+        {list.map((skill) => (
+          <SkillItem {...skill} key={skill.name} />
+        ))}
       </ul>
     </>
   );

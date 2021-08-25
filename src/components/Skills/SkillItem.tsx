@@ -10,7 +10,7 @@ const SkillItem: React.FC<Skill> = ({ name, iconPath }) => {
   const iconSrc = `/skillIcons/${iconPath}.svg`;
 
   return (
-    <li css={liStyles} key={name}>
+    <li css={liStyles}>
       <div>
         <p>{name}</p>
         <img src={iconSrc} alt="" />
