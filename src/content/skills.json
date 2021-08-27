@@ -4,11 +4,13 @@
     "list": [
       {
         "name": "JavaScript",
-        "iconPath": "javascript"
+        "iconPath": "javascript",
+        "colorCode": "#F7DF1E"
       },
       {
         "name": "TypeScript",
-        "iconPath": "typescript"
+        "iconPath": "typescript",
+        "colorCode": "#3178C6"
       },
       {
         "name": "Ruby",
