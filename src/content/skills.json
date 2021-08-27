@@ -14,23 +14,28 @@
       },
       {
         "name": "Ruby",
-        "iconPath": "ruby"
+        "iconPath": "ruby",
+        "colorCode": "#CC342D"
       },
       {
         "name": "HTML5",
-        "iconPath": "html5"
+        "iconPath": "html5",
+        "colorCode": "#E34F26"
       },
       {
         "name": "CSS3",
-        "iconPath": "css3"
+        "iconPath": "css3",
+        "colorCode": "#1572B6"
       },
       {
         "name": "PHP",
-        "iconPath": "php"
+        "iconPath": "php",
+        "colorCode": "#777BB4"
       },
       {
         "name": "C#",
-        "iconPath": "csharp"
+        "iconPath": "csharp",
+        "colorCode": "#239120"
       }
     ]
   },
@@ -39,19 +44,23 @@
     "list": [
       {
         "name": "React.js",
-        "iconPath": "react"
+        "iconPath": "react",
+        "colorCode": "#61DAFB"
       },
       {
         "name": "Vue.js",
-        "iconPath": "vuedotjs"
+        "iconPath": "vuedotjs",
+        "colorCode": "#4FC08D"
       },
       {
         "name": "Express",
-        "iconPath": "express"
+        "iconPath": "express",
+        "colorCode": "#000000"
       },
       {
         "name": "Ruby on Rails",
-        "iconPath": "rubyonrails"
+        "iconPath": "rubyonrails",
+        "colorCode": "#CC0000"
       }
     ]
   },
@@ -60,15 +69,18 @@
     "list": [
       {
         "name": "Node.js",
-        "iconPath": "nodedotjs"
+        "iconPath": "nodedotjs",
+        "colorCode": "#339933"
       },
       {
         "name": "Linux",
-        "iconPath": "linux"
+        "iconPath": "linux",
+        "colorCode": "#FCC624"
       },
       {
         "name": "AWS",
-        "iconPath": "amazonaws"
+        "iconPath": "amazonaws",
+        "colorCode": "#232F3E"
       }
     ]
   }
