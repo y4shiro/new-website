@@ -5,7 +5,8 @@
       {
         "name": "JavaScript",
         "iconPath": "javascript",
-        "colorCode": "#F7DF1E"
+        "colorCode": "#F7DF1E",
+        "backgroundColor": "#444"
       },
       {
         "name": "TypeScript",
@@ -74,8 +75,7 @@
       },
       {
         "name": "Linux",
-        "iconPath": "linux",
-        "colorCode": "#FCC624"
+        "iconPath": "linux"
       },
       {
         "name": "AWS",

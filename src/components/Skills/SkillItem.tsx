@@ -6,28 +6,33 @@ type Skill = {
   name: string;
   iconPath: string;
   colorCode?: string;
+  backgroundColor?: string;
 };
+
+// SkillItem (カード) の背景色
+const ItemBGColor = '#fafafa';
 
 const SkillItem: React.FC<Skill> = ({
   name,
   iconPath,
   colorCode = 'black',
+  backgroundColor = ItemBGColor,
 }) => {
   const iconSrc = `/skillIcons/${iconPath}.svg`;
 
   return (
-    <li css={liStyles(colorCode)}>
+    <li css={liStyles(colorCode, backgroundColor)}>
       <h4>{name}</h4>
       <ReactSVG src={iconSrc} />
     </li>
   );
 };
 
-const liStyles = (colorCode: string) => {
+const liStyles = (colorCode: string, backgroundColor: string) => {
   return css`
     width: 46%;
     padding: 4px;
-    background-color: #fafafa;
+    background-color: ${ItemBGColor};
     list-style: none;
     text-align: center;
     border-radius: 4px;
@@ -48,7 +53,9 @@ const liStyles = (colorCode: string) => {
       transform: translateY(-2%);
 
       // 親要素をホバーしたときに子要素の色を変更
+      // デフォの背景色と色の相性が悪いテーマカラーの場合は skills.json 側で背景色を個別設定
       svg {
+        background-color: ${backgroundColor};
         fill: ${colorCode};
       }
     }

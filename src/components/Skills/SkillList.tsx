@@ -17,6 +17,7 @@ type SkillList = {
     name: string;
     iconPath: string;
     colorCode?: string;
+    backgroundColor?: string;
   }[];
 };
 
