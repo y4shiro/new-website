@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactSVG } from 'react-svg';
 import { css } from '@emotion/react';
 
 type Skill = {
@@ -12,8 +13,8 @@ const SkillItem: React.FC<Skill> = ({ name, iconPath }) => {
   return (
     <li css={liStyles}>
       <div>
-        <p>{name}</p>
-        <img src={iconSrc} alt="" />
+        <h4>{name}</h4>
+        <ReactSVG src={iconSrc} />
       </div>
     </li>
   );
@@ -27,23 +28,23 @@ const liStyles = css`
   text-align: center;
   border-radius: 4px;
   box-shadow: 2px 2px 5px 4px #ddd;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   div {
-    padding: 0 16px 16px 16px;
-
-    p {
-      font-size: 1.125rem;
-    }
-    img {
-      max-width: 4rem;
-      margin: 16px;
-    }
+    margin: 16px auto;
+    padding: 0;
+    width: 92px;
+    fill: black;
+    transition: 0.2s ease-out;
   }
 
   &:hover {
     box-shadow: 5px 5px 5px 4px #ccc;
     transform: translateY(-2%);
+
+    div {
+      fill: red;
+    }
   }
 `;
 
