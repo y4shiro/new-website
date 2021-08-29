@@ -35,9 +35,10 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
     background-color: ${ItemBGColor};
     list-style: none;
     text-align: center;
+    border: solid 2px rgba(0, 0, 0, 0);
     border-radius: 4px;
     box-shadow: 2px 2px 5px 4px #ddd;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     // 子要素(SVG アイコン)のスタイル定義
     svg {
@@ -45,11 +46,12 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
       padding: 0;
       width: 92px;
       fill: black;
-      transition: 0.3s ease-out;
+      transition: all 0.3s ease-out;
     }
 
     &:hover {
       box-shadow: 5px 5px 5px 4px #ccc;
+      border: solid 2px rgba(60, 140, 140, 0.6);
       transform: translateY(-2%);
 
       // 親要素をホバーしたときに子要素の色を変更
