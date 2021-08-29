@@ -45,7 +45,7 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
       padding: 0;
       width: 92px;
       fill: black;
-      transition: 0.2s ease-out;
+      transition: 0.3s ease-out;
     }
 
     &:hover {
