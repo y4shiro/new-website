@@ -35,7 +35,7 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
     background-color: ${ItemBGColor};
     list-style: none;
     text-align: center;
-    border: solid 2px rgba(0, 0, 0, 0);
+    border: solid 1px rgba(0, 0, 0, 0);
     border-radius: 4px;
     box-shadow: 2px 2px 5px 4px #ddd;
     transition: all 0.3s ease-in-out;
@@ -51,7 +51,7 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
 
     &:hover {
       box-shadow: 5px 5px 5px 4px #ccc;
-      border: solid 2px rgba(60, 140, 140, 0.6);
+      border: solid 1px rgba(0, 0, 0, 0.2);
       transform: translateY(-2%);
 
       // 親要素をホバーしたときに子要素の色を変更
