@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 import { css } from '@emotion/react';
+import { breakpoints } from 'src/styles/styles';
 
 type Skill = {
   name: string;
@@ -44,8 +45,14 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
       margin: 16px auto;
       padding: 0;
       width: 92px;
-      fill: black;
+      background-color: ${backgroundColor};
+      fill: ${colorCode};
       transition: all 0.3s ease-out;
+
+      @media (min-width: ${breakpoints.sm}px) {
+        background-color: ${ItemBGColor};
+        fill: black;
+      }
     }
 
     &:hover {
