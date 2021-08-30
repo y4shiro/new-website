@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import SkillItem from './SkillItem';
+import { breakpoints } from 'src/styles/styles';
 
 type Margin = {
   margin?: Partial<{
@@ -54,12 +55,14 @@ const marginStyle = ({ margin }: Margin) => {
 };
 
 const ulStyles = css`
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  @media (min-width: ${breakpoints.sm}px) {
+    padding: 0;
+  }
 `;
 
 export default SkillList;

@@ -30,7 +30,6 @@ const SkillItem: React.FC<Skill> = ({
 
 const liStyles = (colorCode: string, backgroundColor: string) => {
   return css`
-    width: 46%;
     padding: 4px;
     background-color: ${ItemBGColor};
     list-style: none;
