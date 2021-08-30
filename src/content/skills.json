@@ -14,11 +14,6 @@
         "colorCode": "#3178C6"
       },
       {
-        "name": "Ruby",
-        "iconPath": "ruby",
-        "colorCode": "#CC342D"
-      },
-      {
         "name": "HTML5",
         "iconPath": "html5",
         "colorCode": "#E34F26"
@@ -27,6 +22,11 @@
         "name": "CSS3",
         "iconPath": "css3",
         "colorCode": "#1572B6"
+      },
+      {
+        "name": "Ruby",
+        "iconPath": "ruby",
+        "colorCode": "#CC342D"
       },
       {
         "name": "PHP",
@@ -54,6 +54,16 @@
         "colorCode": "#4FC08D"
       },
       {
+        "name": "Electron",
+        "iconPath": "electron",
+        "colorCode": "#47848F"
+      },
+      {
+        "name": "Gatsby",
+        "iconPath": "gatsby",
+        "colorCode": "#663399"
+      },
+      {
         "name": "Express",
         "iconPath": "express",
         "colorCode": "#000000"
@@ -62,6 +72,21 @@
         "name": "Ruby on Rails",
         "iconPath": "rubyonrails",
         "colorCode": "#CC0000"
+      }
+    ]
+  },
+  "editor": {
+    "title": "Editor",
+    "list": [
+      {
+        "name": "Vim",
+        "iconPath": "vim",
+        "colorCode": "#019733"
+      },
+      {
+        "name": "Visual Studio Code",
+        "iconPath": "vscode",
+        "colorCode": "#007ACC"
       }
     ]
   },
@@ -81,6 +106,20 @@
         "name": "AWS",
         "iconPath": "amazonaws",
         "colorCode": "#232F3E"
+      },
+      {
+        "name": "Unity",
+        "iconPath": "unity"
+      },
+      {
+        "name": "Git",
+        "iconPath": "git",
+        "colorCode": "#F05032"
+      },
+      {
+        "name": "GitHub",
+        "iconPath": "github",
+        "colorCode": "#181717"
       }
     ]
   }

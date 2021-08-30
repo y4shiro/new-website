@@ -14,6 +14,7 @@ const Skills: React.FC = () => {
 
       <SkillList margin={marginParams} {...skills.language} />
       <SkillList margin={marginParams} {...skills.framework} />
+      <SkillList margin={marginParams} {...skills.editor} />
       <SkillList margin={marginParams} {...skills.other} />
     </section>
   );
