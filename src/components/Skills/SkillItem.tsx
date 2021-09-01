@@ -5,7 +5,7 @@ import { breakpoints } from 'src/styles/styles';
 
 type Skill = {
   name: string;
-  iconPath: string;
+  iconFileName: string;
   iconColor?: string;
   iconBgColor?: string;
 };
@@ -15,11 +15,11 @@ const ItemBgColor = '#fafafa';
 
 const SkillItem: React.FC<Skill> = ({
   name,
-  iconPath,
+  iconFileName,
   iconColor = '#000000',
   iconBgColor = ItemBgColor,
 }) => {
-  const iconSrc = `/skillIcons/${iconPath}.svg`;
+  const iconSrc = `/skillIcons/${iconFileName}.svg`;
 
   return (
     <li css={liStyles(iconColor, iconBgColor)}>
