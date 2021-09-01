@@ -32,11 +32,13 @@ const wrapper = css`
   margin: 0 auto;
 
   @media (min-width: ${breakpoints.sm}px) {
-    max-width: 576px;
+    max-width: ${breakpoints.sm}px;
   }
-
   @media (min-width: ${breakpoints.md}px) {
-    max-width: 768px;
+    max-width: ${breakpoints.md}px;
+  }
+  @media (min-width: ${breakpoints.lg}px) {
+    max-width: ${breakpoints.lg}px;
   }
 `;
 

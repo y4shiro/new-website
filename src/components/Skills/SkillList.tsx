@@ -62,6 +62,7 @@ const ulStyles = css`
 
   @media (min-width: ${breakpoints.sm}px) {
     padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 
