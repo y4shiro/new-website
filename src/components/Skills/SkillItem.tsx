@@ -3,6 +3,8 @@ import { ReactSVG } from 'react-svg';
 import { css } from '@emotion/react';
 import { breakpoints } from 'src/styles/styles';
 
+import hex2rgba from 'src/utils/hex2rgba';
+
 type Skill = {
   name: string;
   iconFileName: string;
@@ -30,6 +32,10 @@ const SkillItem: React.FC<Skill> = ({
 };
 
 const liStyles = (iconColor: string, iconBgColor: string) => {
+  // アイコンの色に応じたホバー時のボーダー色を決める
+  const borderColor = hex2rgba(iconColor, 0.7);
+  const hoverBorderColorParams = `solid 1px rgba(${borderColor})`;
+
   return css`
     padding: 4px;
     background-color: ${ItemBgColor};
@@ -56,8 +62,8 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     }
 
     &:hover {
+      border: ${hoverBorderColorParams};
       box-shadow: 5px 5px 5px 4px #ccc;
-      border: solid 1px rgba(0, 0, 0, 0.2);
       transform: translateY(-2%);
 
       // 親要素をホバーしたときに子要素の色を変更
