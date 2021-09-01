@@ -6,33 +6,33 @@ import { breakpoints } from 'src/styles/styles';
 type Skill = {
   name: string;
   iconPath: string;
-  colorCode?: string;
-  backgroundColor?: string;
+  iconColor?: string;
+  iconBgColor?: string;
 };
 
 // SkillItem (カード) の背景色
-const ItemBGColor = '#fafafa';
+const ItemBgColor = '#fafafa';
 
 const SkillItem: React.FC<Skill> = ({
   name,
   iconPath,
-  colorCode = 'black',
-  backgroundColor = ItemBGColor,
+  iconColor = '#000000',
+  iconBgColor = ItemBgColor,
 }) => {
   const iconSrc = `/skillIcons/${iconPath}.svg`;
 
   return (
-    <li css={liStyles(colorCode, backgroundColor)}>
+    <li css={liStyles(iconColor, iconBgColor)}>
       <h4>{name}</h4>
       <ReactSVG src={iconSrc} />
     </li>
   );
 };
 
-const liStyles = (colorCode: string, backgroundColor: string) => {
+const liStyles = (iconColor: string, iconBgColor: string) => {
   return css`
     padding: 4px;
-    background-color: ${ItemBGColor};
+    background-color: ${ItemBgColor};
     list-style: none;
     text-align: center;
     border: solid 1px rgba(0, 0, 0, 0);
@@ -45,12 +45,12 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
       margin: 16px auto;
       padding: 0;
       width: 92px;
-      background-color: ${backgroundColor};
-      fill: ${colorCode};
+      background-color: ${iconBgColor};
+      fill: ${iconColor};
       transition: all 0.3s ease-out;
 
       @media (min-width: ${breakpoints.sm}px) {
-        background-color: ${ItemBGColor};
+        background-color: ${ItemBgColor};
         fill: black;
       }
     }
@@ -63,8 +63,8 @@ const liStyles = (colorCode: string, backgroundColor: string) => {
       // 親要素をホバーしたときに子要素の色を変更
       // デフォの背景色と色の相性が悪いテーマカラーの場合は skills.json 側で背景色を個別設定
       svg {
-        background-color: ${backgroundColor};
-        fill: ${colorCode};
+        background-color: ${iconBgColor};
+        fill: ${iconColor};
       }
     }
   `;

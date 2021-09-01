@@ -5,38 +5,38 @@
       {
         "name": "JavaScript",
         "iconPath": "javascript",
-        "colorCode": "#F7DF1E",
-        "backgroundColor": "#444"
+        "iconColor": "#F7DF1E",
+        "iconBgColor": "#444"
       },
       {
         "name": "TypeScript",
         "iconPath": "typescript",
-        "colorCode": "#3178C6"
+        "iconColor": "#3178C6"
       },
       {
         "name": "HTML5",
         "iconPath": "html5",
-        "colorCode": "#E34F26"
+        "iconColor": "#E34F26"
       },
       {
         "name": "CSS3",
         "iconPath": "css3",
-        "colorCode": "#1572B6"
+        "iconColor": "#1572B6"
       },
       {
         "name": "Ruby",
         "iconPath": "ruby",
-        "colorCode": "#CC342D"
+        "iconColor": "#CC342D"
       },
       {
         "name": "PHP",
         "iconPath": "php",
-        "colorCode": "#777BB4"
+        "iconColor": "#777BB4"
       },
       {
         "name": "C#",
         "iconPath": "csharp",
-        "colorCode": "#239120"
+        "iconColor": "#239120"
       }
     ]
   },
@@ -46,32 +46,32 @@
       {
         "name": "React.js",
         "iconPath": "react",
-        "colorCode": "#61DAFB"
+        "iconColor": "#61DAFB"
       },
       {
         "name": "Vue.js",
         "iconPath": "vuedotjs",
-        "colorCode": "#4FC08D"
+        "iconColor": "#4FC08D"
       },
       {
         "name": "Electron",
         "iconPath": "electron",
-        "colorCode": "#47848F"
+        "iconColor": "#47848F"
       },
       {
         "name": "Gatsby",
         "iconPath": "gatsby",
-        "colorCode": "#663399"
+        "iconColor": "#663399"
       },
       {
         "name": "Express",
         "iconPath": "express",
-        "colorCode": "#000000"
+        "iconColor": "#000000"
       },
       {
         "name": "Ruby on Rails",
         "iconPath": "rubyonrails",
-        "colorCode": "#CC0000"
+        "iconColor": "#CC0000"
       }
     ]
   },
@@ -81,12 +81,12 @@
       {
         "name": "Vim",
         "iconPath": "vim",
-        "colorCode": "#019733"
+        "iconColor": "#019733"
       },
       {
         "name": "Visual Studio Code",
         "iconPath": "vscode",
-        "colorCode": "#007ACC"
+        "iconColor": "#007ACC"
       }
     ]
   },
@@ -96,7 +96,7 @@
       {
         "name": "Node.js",
         "iconPath": "nodedotjs",
-        "colorCode": "#339933"
+        "iconColor": "#339933"
       },
       {
         "name": "Linux",
@@ -105,7 +105,7 @@
       {
         "name": "AWS",
         "iconPath": "amazonaws",
-        "colorCode": "#232F3E"
+        "iconColor": "#232F3E"
       },
       {
         "name": "Unity",
@@ -114,12 +114,12 @@
       {
         "name": "Git",
         "iconPath": "git",
-        "colorCode": "#F05032"
+        "iconColor": "#F05032"
       },
       {
         "name": "GitHub",
         "iconPath": "github",
-        "colorCode": "#181717"
+        "iconColor": "#181717"
       }
     ]
   }
