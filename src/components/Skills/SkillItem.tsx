@@ -10,6 +10,7 @@ type Skill = {
   iconFileName: string;
   iconColor?: string;
   iconBgColor?: string;
+  description?: string;
 };
 
 // SkillItem (カード) の背景色
@@ -20,6 +21,7 @@ const SkillItem: React.FC<Skill> = ({
   iconFileName,
   iconColor = '#000000',
   iconBgColor = ItemBgColor,
+  description,
 }) => {
   const iconSrc = `/skillIcons/${iconFileName}.svg`;
 
@@ -27,6 +29,7 @@ const SkillItem: React.FC<Skill> = ({
     <li css={liStyles(iconColor, iconBgColor)}>
       <h4>{name}</h4>
       <ReactSVG src={iconSrc} />
+      {description ? <p>{description}</p> : null}
     </li>
   );
 };
