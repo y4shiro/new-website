@@ -27,7 +27,9 @@ const SkillItem: React.FC<Skill> = ({
 
   return (
     <li css={liStyles(iconColor, iconBgColor)}>
-      <h4>{name}</h4>
+      <h4>
+        <span>{name}</span>
+      </h4>
       <ReactSVG src={iconSrc} />
       {description ? <p>{description}</p> : null}
     </li>
@@ -48,6 +50,23 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     border-radius: 4px;
     box-shadow: 2px 2px 5px 4px #ddd;
     transition: all 0.3s ease-in-out;
+
+    h4 > span {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: ${iconColor};
+        bottom: -8px;
+        left: -5%;
+        width: 100%;
+        height: 2px;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+      }
+    }
 
     // 子要素(SVG アイコン)のスタイル定義
     svg {
@@ -74,6 +93,10 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
       svg {
         background-color: ${iconBgColor};
         fill: ${iconColor};
+      }
+
+      h4 > span::after {
+        transform: scale(1.1, 1);
       }
     }
   `;
