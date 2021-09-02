@@ -8,19 +8,22 @@ const Contact: React.FC = () => {
     <section>
       <h2 css={sectionTitle}>Contact</h2>
       <ul css={ulStyle}>
-        <li css={liStyle}>
+        <li>
           <a href="mailto:y4shironao@gmail.com" target="_blank">
-            <ReactSVG src="/contact/gmail.svg" />
+            <ReactSVG src="/contact/gmail.svg" css={svgStyle('#EA4335')} />
           </a>
         </li>
-        <li css={liStyle}>
+        <li>
           <a href="https://github.com/y4shiro/" target="_blank">
-            <ReactSVG src="/skillIcons/github.svg" />
+            <ReactSVG src="/skillIcons/github.svg" css={svgStyle('#181717')} />
           </a>
         </li>
-        <li css={liStyle}>
+        <li>
           <a href="https://ram.hatenablog.jp/" target="_blank">
-            <ReactSVG src="/contact/hatenabookmark.svg" />
+            <ReactSVG
+              src="/contact/hatenabookmark.svg"
+              css={svgStyle('#00A4DE')}
+            />
           </a>
         </li>
       </ul>
@@ -29,16 +32,26 @@ const Contact: React.FC = () => {
 };
 
 const ulStyle = css`
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 32px;
-  list-style: none;
-  padding: 0;
 `;
 
-const liStyle = css`
-  width: 48px;
-  height: 48px;
-`;
+const svgStyle = (svgColor: string) => {
+  return css`
+    svg {
+      width: 48px;
+      height: 48px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+        fill: ${svgColor};
+      }
+    }
+  `;
+};
 
 export default Contact;
