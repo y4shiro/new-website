@@ -29,7 +29,7 @@ const IndexPage: React.FC = () => {
 
 const wrapper = css`
   max-width: 480px;
-  margin: 0 auto;
+  margin: 0 auto 64px;
 
   @media (min-width: ${breakpoints.sm}px) {
     max-width: ${breakpoints.sm}px;
