@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <Header />
+      {/* <Header /> */}
       <Hero />
 
       <main css={wrapper}>
