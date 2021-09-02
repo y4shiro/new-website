@@ -6,8 +6,7 @@
         "name": "JavaScript",
         "iconFileName": "javascript",
         "iconColor": "#F7DF1E",
-        "iconBgColor": "#444",
-        "description": "description テストテストテスト"
+        "iconBgColor": "#444"
       },
       {
         "name": "TypeScript",
