@@ -7,8 +7,9 @@ const Contact: React.FC = () => {
     <section>
       <h2 css={sectionTitle}>Contact</h2>
       <ul>
-        <li>y4shironao@gmail.com</li>
-        <li>GitHub</li>
+        <li>E-mail: y4shironao@gmail.com</li>
+        <li>GitHub: https://github.com/y4shiro/</li>
+        <li>はてなブログ: https://ram.hatenablog.jp/</li>
       </ul>
     </section>
   );
