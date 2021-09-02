@@ -7,25 +7,38 @@ const Contact: React.FC = () => {
   return (
     <section>
       <h2 css={sectionTitle}>Contact</h2>
-      <ul>
-        <li>
+      <ul css={ulStyle}>
+        <li css={liStyle}>
           <a href="mailto:y4shironao@gmail.com" target="_blank">
-            E-mail: y4shironao@gmail.com
+            <ReactSVG src="/contact/gmail.svg" />
           </a>
         </li>
-        <li>
+        <li css={liStyle}>
           <a href="https://github.com/y4shiro/" target="_blank">
-            GitHub
+            <ReactSVG src="/skillIcons/github.svg" />
           </a>
         </li>
-        <li>
+        <li css={liStyle}>
           <a href="https://ram.hatenablog.jp/" target="_blank">
-            はてなブログ
+            <ReactSVG src="/contact/hatenabookmark.svg" />
           </a>
         </li>
       </ul>
     </section>
   );
 };
+
+const ulStyle = css`
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+`;
+
+const liStyle = css`
+  width: 48px;
+  height: 48px;
+`;
 
 export default Contact;
