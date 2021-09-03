@@ -20,7 +20,7 @@ const globalStyles = css`
   body {
     background-color: #e6e6e6;
     font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-      Meiryo, sans-serif;
+      'BIZ UDPGothic', Meiryo, sans-serif;
   }
 `;
 
