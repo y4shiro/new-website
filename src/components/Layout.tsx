@@ -19,6 +19,8 @@ const Layout: React.FC = ({ children }) => {
 const globalStyles = css`
   body {
     background-color: #e6e6e6;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+      'Hiragino Sans', Meiryo, sans-serif;
   }
 `;
 
