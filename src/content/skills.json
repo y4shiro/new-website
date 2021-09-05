@@ -29,14 +29,14 @@
         "iconColor": "#61DAFB"
       },
       {
-        "name": "Vue.js",
-        "iconFileName": "vuedotjs",
-        "iconColor": "#4FC08D"
-      },
-      {
         "name": "Gatsby",
         "iconFileName": "gatsby",
         "iconColor": "#663399"
+      },
+      {
+        "name": "Vue.js",
+        "iconFileName": "vuedotjs",
+        "iconColor": "#4FC08D"
       }
     ]
   },
@@ -49,9 +49,14 @@
         "iconColor": "#CC342D"
       },
       {
-        "name": "PHP",
-        "iconFileName": "php",
-        "iconColor": "#777BB4"
+        "name": "Ruby on Rails",
+        "iconFileName": "rubyonrails",
+        "iconColor": "#CC0000"
+      },
+      {
+        "name": "Node.js",
+        "iconFileName": "nodedotjs",
+        "iconColor": "#339933"
       },
       {
         "name": "Express",
@@ -59,9 +64,9 @@
         "iconColor": "#000000"
       },
       {
-        "name": "Ruby on Rails",
-        "iconFileName": "rubyonrails",
-        "iconColor": "#CC0000"
+        "name": "PHP",
+        "iconFileName": "php",
+        "iconColor": "#777BB4"
       },
       {
         "name": "MySQL",
@@ -116,6 +121,11 @@
       {
         "name": "Unity",
         "iconFileName": "unity"
+      },
+      {
+        "name": "Xcode",
+        "iconFileName": "xcode",
+        "iconColor": "#147EFB"
       }
     ]
   },
@@ -137,11 +147,6 @@
   "others": {
     "title": "Others",
     "list": [
-      {
-        "name": "Node.js",
-        "iconFileName": "nodedotjs",
-        "iconColor": "#339933"
-      },
       {
         "name": "Linux",
         "iconFileName": "linux"
