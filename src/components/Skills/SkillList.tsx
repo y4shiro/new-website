@@ -58,12 +58,12 @@ const marginStyle = ({ margin }: Margin) => {
 const ulStyles = css`
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 
   @media (min-width: ${breakpoints.sm}px) {
     padding: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
