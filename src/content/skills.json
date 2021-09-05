@@ -62,6 +62,16 @@
         "name": "Ruby on Rails",
         "iconFileName": "rubyonrails",
         "iconColor": "#CC0000"
+      },
+      {
+        "name": "MySQL",
+        "iconFileName": "mysql",
+        "iconColor": "#4479A1"
+      },
+      {
+        "name": "PostgreSQL",
+        "iconFileName": "postgresql",
+        "iconColor": "#4169E1"
       }
     ]
   },
@@ -72,6 +82,21 @@
         "name": "AWS",
         "iconFileName": "amazonaws",
         "iconColor": "#232F3E"
+      },
+      {
+        "name": "Cloudflare",
+        "iconFileName": "cloudflare",
+        "iconColor": "#F38020"
+      },
+      {
+        "name": "Netlify",
+        "iconFileName": "netlify",
+        "iconColor": "#00C7B7"
+      },
+      {
+        "name": "Firebase",
+        "iconFileName": "firebase",
+        "iconColor": "#FFCA28"
       }
     ]
   },
@@ -108,10 +133,6 @@
         "iconColor": "#007ACC"
       }
     ]
-  },
-  "tools": {
-    "title": "Tools",
-    "list": []
   },
   "others": {
     "title": "Others",
