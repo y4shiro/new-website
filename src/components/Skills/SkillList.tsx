@@ -36,7 +36,10 @@ const SkillList: React.FC<Margin & SkillList> = ({ margin, title, list }) => {
   );
 };
 const skillTitleStyle = css`
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
+  @media (min-width: ${breakpoints.sm}px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 // 親からマージンの指定を受ける
