@@ -1,6 +1,6 @@
 {
-  "language": {
-    "title": "Language",
+  "frontend": {
+    "title": "Frontend",
     "list": [
       {
         "name": "JavaScript",
@@ -24,39 +24,9 @@
         "iconColor": "#1572B6"
       },
       {
-        "name": "Ruby",
-        "iconFileName": "ruby",
-        "iconColor": "#CC342D"
-      },
-      {
-        "name": "PHP",
-        "iconFileName": "php",
-        "iconColor": "#777BB4"
-      },
-      {
-        "name": "C#",
-        "iconFileName": "csharp",
-        "iconColor": "#239120"
-      }
-    ]
-  },
-  "framework": {
-    "title": "Framework / Library",
-    "list": [
-      {
         "name": "React.js",
         "iconFileName": "react",
         "iconColor": "#61DAFB"
-      },
-      {
-        "name": "Vue.js",
-        "iconFileName": "vuedotjs",
-        "iconColor": "#4FC08D"
-      },
-      {
-        "name": "Electron",
-        "iconFileName": "electron",
-        "iconColor": "#47848F"
       },
       {
         "name": "Gatsby",
@@ -64,14 +34,98 @@
         "iconColor": "#663399"
       },
       {
-        "name": "Express",
-        "iconFileName": "express",
-        "iconColor": "#000000"
+        "name": "Vue.js",
+        "iconFileName": "vuedotjs",
+        "iconColor": "#4FC08D"
+      }
+    ]
+  },
+  "backend": {
+    "title": "Backend / DB",
+    "list": [
+      {
+        "name": "Ruby",
+        "iconFileName": "ruby",
+        "iconColor": "#CC342D"
       },
       {
         "name": "Ruby on Rails",
         "iconFileName": "rubyonrails",
         "iconColor": "#CC0000"
+      },
+      {
+        "name": "Node.js",
+        "iconFileName": "nodedotjs",
+        "iconColor": "#339933"
+      },
+      {
+        "name": "Express",
+        "iconFileName": "express",
+        "iconColor": "#000000"
+      },
+      {
+        "name": "PHP",
+        "iconFileName": "php",
+        "iconColor": "#777BB4"
+      },
+      {
+        "name": "MySQL",
+        "iconFileName": "mysql",
+        "iconColor": "#4479A1"
+      },
+      {
+        "name": "PostgreSQL",
+        "iconFileName": "postgresql",
+        "iconColor": "#4169E1"
+      }
+    ]
+  },
+  "cloud": {
+    "title": "Cloud",
+    "list": [
+      {
+        "name": "AWS",
+        "iconFileName": "amazonaws",
+        "iconColor": "#232F3E"
+      },
+      {
+        "name": "Cloudflare",
+        "iconFileName": "cloudflare",
+        "iconColor": "#F38020"
+      },
+      {
+        "name": "Netlify",
+        "iconFileName": "netlify",
+        "iconColor": "#00C7B7"
+      },
+      {
+        "name": "Firebase",
+        "iconFileName": "firebase",
+        "iconColor": "#FFCA28"
+      }
+    ]
+  },
+  "apps": {
+    "title": "Native Apps",
+    "list": [
+      {
+        "name": "Electron",
+        "iconFileName": "electron",
+        "iconColor": "#47848F"
+      },
+      {
+        "name": "C#",
+        "iconFileName": "csharp",
+        "iconColor": "#239120"
+      },
+      {
+        "name": "Unity",
+        "iconFileName": "unity"
+      },
+      {
+        "name": "Xcode",
+        "iconFileName": "xcode",
+        "iconColor": "#147EFB"
       }
     ]
   },
@@ -90,26 +144,12 @@
       }
     ]
   },
-  "other": {
-    "title": "Other",
+  "others": {
+    "title": "Others",
     "list": [
-      {
-        "name": "Node.js",
-        "iconFileName": "nodedotjs",
-        "iconColor": "#339933"
-      },
       {
         "name": "Linux",
         "iconFileName": "linux"
-      },
-      {
-        "name": "AWS",
-        "iconFileName": "amazonaws",
-        "iconColor": "#232F3E"
-      },
-      {
-        "name": "Unity",
-        "iconFileName": "unity"
       },
       {
         "name": "Git",
