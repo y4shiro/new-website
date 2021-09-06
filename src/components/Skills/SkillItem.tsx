@@ -72,7 +72,7 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     svg {
       margin: 16px auto;
       padding: 0;
-      width: 92px;
+      width: 64px;
       background-color: ${iconBgColor};
       fill: ${iconColor};
       transition: all 0.3s ease-out;
