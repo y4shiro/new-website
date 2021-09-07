@@ -30,5 +30,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-root-import',
+    `gatsby-plugin-react-helmet`,
   ],
 };
