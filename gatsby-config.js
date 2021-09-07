@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://y4shiro.net',
-    title: 'website',
+    title: "y4shiro's Portforio",
+    description: 'y4shiro のポートフォリオページです',
   },
   plugins: [
     'gatsby-plugin-emotion',
