@@ -22,6 +22,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
     siteName: siteName,
     ogType: siteUrl === location.href ? 'website' : 'webpage',
     ogImagePath: ogpImagePath,
+    ogLocale: 'ja_JP',
   };
 
   return (
@@ -37,6 +38,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <meta property="og:site_name" content={seo.siteName} />
       <meta property="og:type" content={seo.ogType} />
       <meta property="og:image" content={seo.ogImagePath} />
+      <meta property="og:locale" content={seo.ogLocale} />
       {/* <meta property="og:" content={} /> */}
     </Helmet>
   );
