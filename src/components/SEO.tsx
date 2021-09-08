@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import { useLocation } from '@reach/router';
 
 type Props = {
   title?: string;
@@ -11,12 +12,16 @@ const SEO: React.FC<Props> = ({ title, description }) => {
   const { site } = useStaticQuery(query);
   const { defaultTitle, defaultDescription, titleTemplate, siteUrl } =
     site.siteMetadata;
+  const location = useLocation();
+  console.log(location.href);
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     siteUrl: siteUrl,
+    ogType: siteUrl === location.href ? 'website' : 'webpage',
   };
+  console.log(seo.ogType);
 
   return (
     <Helmet titleTemplate={titleTemplate}>
@@ -24,6 +29,8 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <title>{seo.title}</title>
       <meta name="description" content={defaultDescription} />
       <link rel="canonical" href={seo.siteUrl} />
+
+      <meta property="og:type" content={seo.ogType} />
     </Helmet>
   );
 };

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "y4shiro's Portforio",
     description: 'y4shiro のポートフォリオページです',
-    siteUrl: 'https://y4shiro.net',
+    siteUrl: 'https://y4shiro.net/',
     titleTemplate: '%s | y4shiro.net',
   },
   plugins: [
