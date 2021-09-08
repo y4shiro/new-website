@@ -13,7 +13,6 @@ const SEO: React.FC<Props> = ({ title, description }) => {
   const { defaultTitle, defaultDescription, titleTemplate, siteUrl } =
     site.siteMetadata;
   const location = useLocation();
-  console.log(location.href);
 
   const seo = {
     title: title || defaultTitle,
@@ -21,7 +20,6 @@ const SEO: React.FC<Props> = ({ title, description }) => {
     siteUrl: siteUrl,
     ogType: siteUrl === location.href ? 'website' : 'webpage',
   };
-  console.log(seo.ogType);
 
   return (
     <Helmet titleTemplate={titleTemplate}>
@@ -40,7 +38,7 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        defauultDescription: description
+        defaultDescription: description
         titleTemplate
         siteUrl
       }
