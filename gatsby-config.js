@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: 'https://y4shiro.net',
     title: "y4shiro's Portforio",
     description: 'y4shiro のポートフォリオページです',
+    titleTemplate: '%s | y4shiro.net',
   },
   plugins: [
     'gatsby-plugin-emotion',

@@ -1,16 +1,26 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-const SEO: React.FC = () => {
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const SEO: React.FC<Props> = ({ title, description }) => {
   const { site } = useStaticQuery(query);
-  console.log(site);
+  const { defaultTitle, defaultDescription, titleTemplate } = site.siteMetadata;
+
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+  };
 
   return (
-    <Helmet>
+    <Helmet titleTemplate={titleTemplate}>
       <html lang="ja" />
-      <title>{site.siteMetadata.title}</title>
-      <meta name="description" content={site.siteMetadata.description} />
+      <title>{defaultTitle}</title>
+      <meta name="description" content={defaultDescription} />
     </Helmet>
   );
 };
@@ -19,8 +29,9 @@ const query = graphql`
   query {
     site {
       siteMetadata {
-        title
-        description
+        defaultTitle: title
+        defauultDescription: description
+        titleTemplate
       }
     }
   }
