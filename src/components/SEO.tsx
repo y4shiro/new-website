@@ -9,11 +9,11 @@ type Props = {
 };
 
 const SEO: React.FC<Props> = ({ title, description }) => {
-  const { site } = useStaticQuery(query);
+  const { site, file } = useStaticQuery(query);
   const { defaultTitle, defaultDescription, titleTemplate, siteUrl, siteName } =
     site.siteMetadata;
   const location = useLocation();
-  const ogpImagePath = `/mbp.jpg`;
+  const ogpImagePath = file.childImageSharp.fixed.src;
 
   const seo = {
     title: title || defaultTitle,
@@ -53,6 +53,14 @@ const query = graphql`
         titleTemplate
         siteUrl
         siteName
+      }
+    }
+
+    file(relativePath: { eq: "mbp.jpg" }) {
+      childImageSharp {
+        fixed {
+          src
+        }
       }
     }
   }
