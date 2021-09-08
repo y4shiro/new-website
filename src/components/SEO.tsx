@@ -9,18 +9,21 @@ type Props = {
 
 const SEO: React.FC<Props> = ({ title, description }) => {
   const { site } = useStaticQuery(query);
-  const { defaultTitle, defaultDescription, titleTemplate } = site.siteMetadata;
+  const { defaultTitle, defaultDescription, titleTemplate, siteUrl } =
+    site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
+    siteUrl: siteUrl,
   };
 
   return (
     <Helmet titleTemplate={titleTemplate}>
       <html lang="ja" />
-      <title>{defaultTitle}</title>
+      <title>{seo.title}</title>
       <meta name="description" content={defaultDescription} />
+      <link rel="canonical" href={seo.siteUrl} />
     </Helmet>
   );
 };
@@ -32,6 +35,7 @@ const query = graphql`
         defaultTitle: title
         defauultDescription: description
         titleTemplate
+        siteUrl
       }
     }
   }
