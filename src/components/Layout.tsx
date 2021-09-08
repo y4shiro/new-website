@@ -2,12 +2,9 @@ import React from 'react';
 import { Global, css } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
 
-import SEO from './SEO';
-
 const Layout: React.FC = ({ children }) => {
   return (
     <>
-      <SEO />
       <Global
         styles={css`
           ${emotionNormalize}
