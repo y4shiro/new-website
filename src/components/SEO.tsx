@@ -10,15 +10,18 @@ type Props = {
 
 const SEO: React.FC<Props> = ({ title, description }) => {
   const { site } = useStaticQuery(query);
-  const { defaultTitle, defaultDescription, titleTemplate, siteUrl } =
+  const { defaultTitle, defaultDescription, titleTemplate, siteUrl, siteName } =
     site.siteMetadata;
   const location = useLocation();
+  const ogpImagePath = `${siteUrl}/mbp.jpg`;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     siteUrl: siteUrl,
+    siteName: siteName,
     ogType: siteUrl === location.href ? 'website' : 'webpage',
+    ogImagePath: ogpImagePath,
   };
 
   return (
@@ -28,7 +31,12 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <meta name="description" content={defaultDescription} />
       <link rel="canonical" href={seo.siteUrl} />
 
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:url" content={seo.siteUrl} />
+      <meta property="og:site_name" content={seo.siteName} />
       <meta property="og:type" content={seo.ogType} />
+      {/* <meta property="og:" content={} /> */}
     </Helmet>
   );
 };
@@ -41,6 +49,7 @@ const query = graphql`
         defaultDescription: description
         titleTemplate
         siteUrl
+        siteName
       }
     }
   }
