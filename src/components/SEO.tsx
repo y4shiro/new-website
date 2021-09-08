@@ -36,6 +36,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <meta property="og:url" content={seo.siteUrl} />
       <meta property="og:site_name" content={seo.siteName} />
       <meta property="og:type" content={seo.ogType} />
+      <meta property="og:image" content={seo.ogImagePath} />
       {/* <meta property="og:" content={} /> */}
     </Helmet>
   );
