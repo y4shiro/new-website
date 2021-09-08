@@ -13,7 +13,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
   const { defaultTitle, defaultDescription, titleTemplate, siteUrl, siteName } =
     site.siteMetadata;
   const location = useLocation();
-  const ogpImagePath = `${siteUrl}/mbp.jpg`;
+  const ogpImagePath = `${location.host}/mbp.jpg`;
 
   const seo = {
     title: title || defaultTitle,
