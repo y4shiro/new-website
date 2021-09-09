@@ -33,7 +33,6 @@ const ulStyles = css`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 1rem;
   margin: 0 auto;
   padding: 1.5rem 0;
   color: #ddd;
@@ -41,6 +40,11 @@ const ulStyles = css`
 
   li {
     list-style: none;
+
+    // GitHub リンクの方に bottom margin をつける
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
 
     & > a {
       display: flex;
@@ -58,8 +62,12 @@ const ulStyles = css`
     width: 90%;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
     padding: 1.5rem 0;
+
+    // GitHub リンクの bottom margin を打ち消す
+    li:last-of-type {
+      margin-bottom: 0;
+    }
   }
 `;
 
