@@ -21,7 +21,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
     siteUrl: siteUrl,
     siteName: siteName,
     ogType: siteUrl === location.href ? 'website' : 'webpage',
-    ogImagePath: `${siteUrl}${ogpImagePath}`,
+    ogImagePath: `${siteUrl}/${ogpImagePath}`,
     ogLocale: 'ja_JP',
   };
 
