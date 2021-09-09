@@ -16,14 +16,17 @@ const SEO: React.FC<Props> = ({ title, description }) => {
   const ogpImagePath = file.childImageSharp.fixed.src;
 
   console.log(location);
-  console.log(siteUrl === location.href ? 'website' : 'webpage');
+  console.log(siteUrl === location.origin ? 'website' : 'webpage');
+  console.log(siteUrl);
+  console.log(location.origin);
+  console.log(ogpImagePath);
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     siteUrl: siteUrl,
     siteName: siteName,
-    ogType: siteUrl === location.href ? 'website' : 'webpage',
+    ogType: siteUrl === location.origin ? 'website' : 'webpage',
     ogImagePath: `${siteUrl}${ogpImagePath}`,
     ogLocale: 'ja_JP',
   };
