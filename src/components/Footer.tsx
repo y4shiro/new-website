@@ -32,8 +32,8 @@ const footerStyles = css`
 const ulStyles = css`
   display: flex;
   flex-direction: column-reverse;
+  row-gap: 1rem;
   align-items: center;
-  gap: 1rem;
   margin: 0 auto;
   padding: 1.5rem 0;
   color: #ddd;
@@ -57,8 +57,8 @@ const ulStyles = css`
   @media (min-width: ${breakpoints.sm}px) {
     width: 90%;
     flex-direction: row;
+    row-gap: 0rem;
     justify-content: space-between;
-    gap: 0;
     padding: 1.5rem 0;
   }
 `;
