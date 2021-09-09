@@ -32,7 +32,6 @@ const footerStyles = css`
 const ulStyles = css`
   display: flex;
   flex-direction: column-reverse;
-  row-gap: 1rem;
   align-items: center;
   margin: 0 auto;
   padding: 1.5rem 0;
@@ -41,6 +40,11 @@ const ulStyles = css`
 
   li {
     list-style: none;
+
+    // GitHub リンクの方に bottom margin をつける
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
 
     & > a {
       display: flex;
@@ -57,9 +61,13 @@ const ulStyles = css`
   @media (min-width: ${breakpoints.sm}px) {
     width: 90%;
     flex-direction: row;
-    row-gap: 0rem;
     justify-content: space-between;
     padding: 1.5rem 0;
+
+    // GitHub リンクの bottom margin を打ち消す
+    li:last-of-type {
+      margin-bottom: 0;
+    }
   }
 `;
 
