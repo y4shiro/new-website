@@ -58,7 +58,7 @@ const query = graphql`
 
     file(relativePath: { eq: "mbp.jpg" }) {
       childImageSharp {
-        fixed {
+        fixed(width: 1920) {
           src
         }
       }
