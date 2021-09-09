@@ -1,32 +1,25 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { useLocation } from '@reach/router';
 
 type Props = {
   title?: string;
   description?: string;
+  ogType?: string;
 };
 
-const SEO: React.FC<Props> = ({ title, description }) => {
+const SEO: React.FC<Props> = ({ title, description, ogType = 'webpage' }) => {
   const { site, file } = useStaticQuery(query);
   const { defaultTitle, defaultDescription, titleTemplate, siteUrl, siteName } =
     site.siteMetadata;
-  const location = useLocation();
   const ogpImagePath = file.childImageSharp.fixed.src;
-
-  console.log(location);
-  console.log(siteUrl === location.origin ? 'website' : 'webpage');
-  console.log(siteUrl);
-  console.log(location.origin);
-  console.log(ogpImagePath);
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     siteUrl: siteUrl,
     siteName: siteName,
-    ogType: siteUrl === location.origin ? 'website' : 'webpage',
+    ogType: ogType,
     ogImagePath: `${siteUrl}${ogpImagePath}`,
     ogLocale: 'ja_JP',
   };

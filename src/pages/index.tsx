@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <SEO />
+      <SEO ogType="website" />
       {/* <Header /> */}
       <Hero />
 
