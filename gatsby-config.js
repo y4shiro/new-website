@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://y4shiro.net',
-    title: 'website',
+    title: "y4shiro's Portforio",
+    description: 'y4shiro のポートフォリオページ',
+    siteUrl: 'https://y4shiro.net/',
+    siteName: 'y4shiro.net',
+    titleTemplate: '%s | y4shiro.net',
   },
   plugins: [
     'gatsby-plugin-emotion',
@@ -30,5 +33,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-root-import',
+    `gatsby-plugin-react-helmet`,
   ],
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { breakpoints } from '../styles/styles';
 
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero';
@@ -13,6 +14,7 @@ import Footer from '../components/Footer';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
+      <SEO ogType="website" />
       {/* <Header /> */}
       <Hero />
 
