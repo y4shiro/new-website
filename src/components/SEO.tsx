@@ -38,7 +38,6 @@ const SEO: React.FC<Props> = ({ title, description, ogType = 'webpage' }) => {
       <meta property="og:type" content={seo.ogType} />
       <meta property="og:image" content={seo.ogImagePath} />
       <meta property="og:locale" content={seo.ogLocale} />
-      {/* <meta property="og:" content={} /> */}
     </Helmet>
   );
 };
