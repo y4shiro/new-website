@@ -21,7 +21,9 @@ const GithubGraph: React.FC = () => {
   const imageRef = ref(storage, 'y4shiro.svg');
 
   useEffect(() => {
-    getDownloadURL(imageRef).then((url) => setImgSrc(url));
+    getDownloadURL(imageRef)
+      .then((url) => setImgSrc(url))
+      .catch((err) => console.error(err));
   }, []);
 
   return (
