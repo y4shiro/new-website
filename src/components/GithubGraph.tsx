@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { css } from '@emotion/react';
 import { sectionTitle } from '../styles/styles';
 
+import { initializeApp } from 'firebase/app';
+import { getStorage, ref, getDownloadURL } from 'firebase/storage';
+
 const GithubGraph: React.FC = () => {
+  const [imgSrc, setImgSrc] = useState('');
+
+  const firebaseConfig = {
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
+  };
+  const app = initializeApp(firebaseConfig);
+  const storage = getStorage(app);
+  const imageRef = ref(storage, 'y4shiro.svg');
+
+  useEffect(() => {
+    getDownloadURL(imageRef).then((url) => setImgSrc(url));
+  }, []);
+
   return (
     <section>
       <a href="https://github.com/y4shiro" target="_blank">
-        <img
-          css={imgStyles}
-          src="https://github-contributions-api.deno.dev/y4shiro.svg"
-        />
+        <img css={imgStyles} src={imgSrc} />
       </a>
     </section>
   );
