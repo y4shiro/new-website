@@ -24,6 +24,7 @@ const GithubGraph: React.FC = () => {
   //   getDownloadURL(imageRef).then((url) => setImgSrc(url));
   // }, []);
   console.log(process.env.TEST);
+  console.log(process.env.GATSBY_TEST);
   console.log(process.env.FIREBASE_STORAGE_BUCKET);
 
   return (
