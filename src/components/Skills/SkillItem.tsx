@@ -51,20 +51,29 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     box-shadow: 2px 2px 5px 4px #ddd;
     transition: all 0.3s ease-in-out;
 
-    h4 > span {
-      position: relative;
+    h4 {
+      margin: 1rem 0 0.5rem;
+      font-size: 0.9rem;
 
-      &::after {
-        content: '';
-        position: absolute;
-        background-color: ${iconColor};
-        bottom: -8px;
-        left: -5%;
-        width: 100%;
-        height: 2px;
-        transform: scale(0, 1);
-        transform-origin: left;
-        transition: all 0.3s ease-in-out;
+      @media (min-width: ${breakpoints.sm}px) {
+        font-size: 1rem;
+      }
+
+      & > span {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: ${iconColor};
+          bottom: -8px;
+          left: -5%;
+          width: 100%;
+          height: 2px;
+          transform: scale(0, 1);
+          transform-origin: left;
+          transition: all 0.3s ease-in-out;
+        }
       }
     }
 
@@ -72,12 +81,13 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     svg {
       margin: 16px auto;
       padding: 0;
-      width: 64px;
+      width: 48px;
       background-color: ${iconBgColor};
       fill: ${iconColor};
       transition: all 0.3s ease-out;
 
       @media (min-width: ${breakpoints.sm}px) {
+        width: 64px;
         background-color: ${ItemBgColor};
         fill: black;
       }
