@@ -47,12 +47,12 @@ Gatsby 公式の画像処理系プラグイン
 - Cloudflare DNS
 - Firebase (Functions / Storage)
 
-ページ公開は Cloudflare Pages、ドメイン関連は Cloudflare DNS
+ページ公開は Cloudflare Pages、ドメイン関連は Cloudflare DNS  
 一部処理に Firebase を利用している
 
 ## ローカルサーバの立ち上げ
 
-リポジトリクローン後に `.env.develop` をルートに追加
+リポジトリクローン後に `.env.develop` をルートに追加  
 Firebase を利用しているので、これが無いとビルド時にエラーが出る
 
 ```bash
@@ -72,11 +72,11 @@ $ gatsby develop
 
 ## 本番公開用ファイルのビルド
 
-事前に `.env.production` を用意する必要がある
+事前に `.env.production` を用意する必要がある  
 内容は上で紹介した .env.develop を参考にすること
 
-下記コマンドを実行すると、`public` ディレクトリに公開用ファイルが出力される
-任意の Web サーバや権限を全公開にしたクラウドストレージなどに出力されたファイルを設置すると Web ページとして公開される
+下記コマンドを実行すると、`public` ディレクトリに公開用ファイルが出力される  
+任意の Web サーバや権限を全公開にしたクラウドストレージなどに出力されたファイルを設置すると Web ページとして公開される  
 ただ、ホスティングサービスとリポジトリを連携してビルド/デプロイを自動で行うほうが圧倒的に楽
 
 ```bash
@@ -85,5 +85,5 @@ $ gatsby build
 
 ## ホスティングサービスと連携 / デプロイ
 
-Netlify / Cloudflare Pages など各サービスによって手順が異なるので調べてください
+Netlify / Cloudflare Pages など各サービスによって手順が異なるので調べてください  
 `.env.*` 系の環境変数ファイルをリポジトリで公開しない方針なので、ホスティングサービスの GUI で環境変数を必ず入力すること
