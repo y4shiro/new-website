@@ -5,13 +5,20 @@
 
 [y4shiro.net](https://y4shiro.net/)
 
-## 開発環境
+## 環境
 
 ### ローカル
 
 - Node.js v14.15.1
 - npm 7.14.0
 - Git 2.31.1
+
+### デプロイ環境
+
+- Cloudflare Pages
+- Cloudflare DNS
+
+ページ公開は Cloudflare Pages、ドメイン関連は Cloudflare DNS
 
 ### NPM
 
@@ -22,7 +29,7 @@
 - TypeScript 4.3.5
 - Emotion 11.4
 
-### Gatsby-plugin
+#### Gatsby-plugin
 
 - gatsby-plugin-emotion 6.9.0
 - gatsby-plugin-google-analytics 3.9.0
