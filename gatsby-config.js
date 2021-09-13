@@ -34,5 +34,19 @@ module.exports = {
     },
     'gatsby-plugin-root-import',
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          'Rokkitt',
+          'Lato',
+          'Libre Baskerville',
+          'Cherry Swash',
+          'Tienne',
+          'Josefin Sans',
+        ],
+        display: 'swap',
+      },
+    },
   ],
 };
