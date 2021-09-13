@@ -61,12 +61,17 @@ const marginStyle = ({ margin }: Margin) => {
 const ulStyles = css`
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
   @media (min-width: ${breakpoints.sm}px) {
-    padding: 0;
     grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: ${breakpoints.lg}px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (min-width: ${breakpoints.xl}px) {
+    grid-template-columns: repeat(6, 1fr);
   }
 `;
 

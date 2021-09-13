@@ -30,17 +30,11 @@ const IndexPage: React.FC = () => {
 };
 
 const wrapper = css`
-  max-width: 480px;
+  max-width: 95%;
   margin: 0 auto 64px;
 
-  @media (min-width: ${breakpoints.sm}px) {
-    max-width: ${breakpoints.sm}px;
-  }
-  @media (min-width: ${breakpoints.md}px) {
-    max-width: ${breakpoints.md}px;
-  }
-  @media (min-width: ${breakpoints.lg}px) {
-    max-width: ${breakpoints.lg}px;
+  @media (min-width: ${breakpoints.xl}px) {
+    max-width: ${breakpoints.xl}px;
   }
 `;
 
