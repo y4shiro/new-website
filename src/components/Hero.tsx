@@ -47,11 +47,11 @@ const logo = css`
   grid-area: 1/1;
   position: relative;
   place-items: center;
-  font-family: 'Josefin Sans';
-  color: #ddd;
   z-index: 20;
 
   h1 {
+    color: #ddd;
+    font-family: 'Josefin Sans';
     font-size: 2.75rem;
     font-weight: 400;
 
