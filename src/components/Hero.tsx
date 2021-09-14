@@ -54,9 +54,18 @@ const logo = css`
   h1 {
     font-size: 2.75rem;
     font-weight: 400;
+
     @media (min-width: ${breakpoints.sm}px) {
+      font-size: 3.5rem;
+    }
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: 4rem;
     }
     @media (min-width: ${breakpoints.lg}px) {
+      font-size: 4.5rem;
+    }
+    @media (min-width: ${breakpoints.xl}px) {
+      font-size: 5rem;
     }
   }
 `;
