@@ -47,6 +47,7 @@ const logo = css`
   grid-area: 1/1;
   position: relative;
   place-items: center;
+  font-family: 'Josefin Sans';
   font-size: 1.25rem;
   color: #ddd;
   z-index: 20;
