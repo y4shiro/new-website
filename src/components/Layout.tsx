@@ -22,6 +22,10 @@ const globalStyles = css`
     font-family: 'Lato', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
       'Hiragino Sans', Meiryo, sans-serif;
   }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
 `;
 
 export default Layout;

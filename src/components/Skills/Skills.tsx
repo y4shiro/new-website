@@ -1,8 +1,6 @@
 import React from 'react';
 
 import SkillList from './SkillList';
-
-import { sectionTitle } from 'src/styles/styles';
 import skills from 'src/content/skills.json';
 
 const Skills: React.FC = () => {
@@ -10,7 +8,7 @@ const Skills: React.FC = () => {
 
   return (
     <section>
-      <h2 css={sectionTitle}>Skills</h2>
+      <h2>Skills</h2>
 
       {Object.values(skills).map((skill, index) => (
         <SkillList key={index} margin={marginParams} {...skill} />

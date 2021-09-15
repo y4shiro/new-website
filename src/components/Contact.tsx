@@ -1,12 +1,11 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { sectionTitle } from '../styles/styles';
 import { ReactSVG } from 'react-svg';
 
 const Contact: React.FC = () => {
   return (
     <section>
-      <h2 css={sectionTitle}>Contact</h2>
+      <h2>Contact</h2>
       <ul css={ulStyle}>
         <li>
           <a href="mailto:y4shironao@gmail.com" target="_blank">
