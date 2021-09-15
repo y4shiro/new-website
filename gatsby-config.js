@@ -45,21 +45,30 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          google: [
+          // google: [
+          //   {
+          //     family: 'Josefin Sans',
+          //     variants: ['400'],
+          //   },
+          //   {
+          //     family: 'Lato',
+          //     variants: ['400', '700'],
+          //   },
+          google2: [
             {
               family: 'Josefin Sans',
-              variants: ['400'],
+              axes: 'wght@400',
             },
             {
               family: 'Lato',
-              variants: ['400', '700'],
+              axes: 'wght@400;700',
             },
           ],
         },
         //formats: ['woff2', 'woff'],
         //useMinify: true,
         //usePreload: true,
-        usePreconnect: true,
+        // usePreconnect: true,
       },
     },
   ],
