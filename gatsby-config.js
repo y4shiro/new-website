@@ -65,7 +65,7 @@ module.exports = {
             },
           ],
         },
-        //formats: ['woff2', 'woff'],
+        formats: ['woff2'],
         //useMinify: true,
         //usePreload: true,
         usePreconnect: true,
