@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: ['Lato:400,700', 'Josefin Sans'],
-        display: 'block',
+        display: 'fallback',
       },
     },
   ],
