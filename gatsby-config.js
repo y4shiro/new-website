@@ -37,16 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'Lato:100,300,400,700,900',
-          'Josefin Sans:100,200,300,400,500,600,700',
-          'Open Sans:300,400,600,700,800',
-          'Titillium Web:200,300,400,600,700,900',
-          'Play:400,700',
-          'Rubik:300,400,500,600,700,800,900',
-          'Rokkitt:100,200,300,400,500,600,700,800,900',
-          'Roboto:100,300,400,500,700,900',
-        ],
+        fonts: ['Lato:400,700', 'Josefin Sans'],
         display: 'swap',
       },
     },
