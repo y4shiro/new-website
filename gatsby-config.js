@@ -34,11 +34,32 @@ module.exports = {
     },
     'gatsby-plugin-root-import',
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: ['Lato:400,700', 'Josefin Sans'],
+    //     display: 'swap',
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: ['Lato:400,700', 'Josefin Sans'],
-        display: 'swap',
+        fonts: {
+          google: [
+            {
+              family: 'Josefin Sans',
+              variants: ['400'],
+            },
+            {
+              family: 'Lato',
+              variants: ['400', '700'],
+            },
+          ],
+        },
+        //formats: ['woff2', 'woff'],
+        //useMinify: true,
+        //usePreload: true,
+        //usePreconnect: false,
       },
     },
   ],
