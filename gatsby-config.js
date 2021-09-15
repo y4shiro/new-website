@@ -57,11 +57,10 @@ module.exports = {
           google2: [
             {
               family: 'Josefin Sans',
-              axes: 'wght@400',
             },
             {
               family: 'Lato',
-              axes: 'wght@400;700',
+              axes: 'wght@700',
             },
           ],
         },
