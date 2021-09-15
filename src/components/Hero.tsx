@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         placeholder="blurred"
       />
       <div css={logo}>
-        <h2>y4shiro's Portfolio</h2>
+        <h1>y4shiro's Portfolio</h1>
       </div>
     </section>
   );
@@ -37,7 +37,7 @@ const image = css`
     height: 100%;
     display: block;
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 10;
   }
 `;
@@ -47,15 +47,26 @@ const logo = css`
   grid-area: 1/1;
   position: relative;
   place-items: center;
-  font-size: 1.25rem;
-  color: #ddd;
   z-index: 20;
 
-  @media (min-width: ${breakpoints.sm}px) {
-    font-size: 2rem;
-  }
-  @media (min-width: ${breakpoints.lg}px) {
-    font-size: 2.5rem;
+  h1 {
+    color: #ddd;
+    font-family: 'Josefin Sans';
+    font-size: 2.75rem;
+    font-weight: 400;
+
+    @media (min-width: ${breakpoints.sm}px) {
+      font-size: 3.5rem;
+    }
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: 4rem;
+    }
+    @media (min-width: ${breakpoints.lg}px) {
+      font-size: 4.5rem;
+    }
+    @media (min-width: ${breakpoints.xl}px) {
+      font-size: 5rem;
+    }
   }
 `;
 
