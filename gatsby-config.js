@@ -35,10 +35,25 @@ module.exports = {
     'gatsby-plugin-root-import',
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: ['Lato:400,700', 'Josefin Sans'],
-        display: 'swap',
+        fonts: {
+          google2: [
+            {
+              family: 'Josefin Sans',
+              strategy: 'cdn',
+            },
+            {
+              family: 'Lato',
+              axes: 'wght@700',
+              strategy: 'cdn',
+            },
+          ],
+        },
+        formats: ['woff2'],
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: true,
       },
     },
   ],
