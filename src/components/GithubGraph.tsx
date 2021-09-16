@@ -16,7 +16,7 @@ const GithubGraph: React.FC = () => {
   }, []);
 
   return (
-    <section>
+    <section css={sectionStyles}>
       <a href="https://github.com/y4shiro" target="_blank">
         <img css={imgStyles} src={img} />
       </a>
@@ -24,8 +24,13 @@ const GithubGraph: React.FC = () => {
   );
 };
 
+const sectionStyles = css`
+  text-align: center;
+`;
+
 const imgStyles = css`
   width: 100%;
+  max-width: 768px;
   background-color: #fefefe;
   border-radius: 8px;
   box-shadow: 2px 2px 5px 4px #ddd;
