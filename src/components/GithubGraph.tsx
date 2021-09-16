@@ -1,30 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import { css } from '@emotion/react';
-import { sectionTitle } from '../styles/styles';
-
-import { initializeApp } from 'firebase/app';
-import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
 const GithubGraph: React.FC = () => {
-  const [imgSrc, setImgSrc] = useState('');
-
   const firebaseConfig = {
-    apiKey: process.env.GATSBY_FIREBASE_API_KEY,
-    authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
     storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.GATSBY_FIREBASE_APP_ID,
+    storageToken: process.env.GATSBY_FIREBASE_STORAGE_TOKEN,
   };
-  const app = initializeApp(firebaseConfig);
-  const storage = getStorage(app);
-  const imageRef = ref(storage, 'y4shiro.svg');
-
-  useEffect(() => {
-    getDownloadURL(imageRef)
-      .then((url) => setImgSrc(url))
-      .catch((err) => console.error(err));
-  }, []);
+  const imgSrc = `https://firebasestorage.googleapis.com/v0/b/${firebaseConfig.storageBucket}/o/y4shiro.svg?alt=media&token=${firebaseConfig.storageToken}`;
 
   return (
     <section>
