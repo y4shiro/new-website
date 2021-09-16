@@ -22,19 +22,26 @@ const GithubGraph: React.FC = () => {
         target="_blank"
         aria-label="GitHubページへ移動"
       >
-        <img css={imgStyles} src={img} alt="GitHub Contribute Graph" />
+        <img
+          css={imgStyles}
+          src={img}
+          width="712"
+          height="140"
+          alt="GitHub Contribute Graph"
+        />
       </a>
     </section>
   );
 };
 
 const sectionStyles = css`
-  text-align: center;
+  margin: 0 auto;
+  max-width: 712px;
 `;
 
 const imgStyles = css`
+  height: auto;
   width: 100%;
-  max-width: 768px;
   background-color: #fefefe;
   border-radius: 8px;
   box-shadow: 2px 2px 5px 4px #ddd;
