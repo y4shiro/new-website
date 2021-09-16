@@ -17,8 +17,12 @@ const GithubGraph: React.FC = () => {
 
   return (
     <section css={sectionStyles}>
-      <a href="https://github.com/y4shiro" target="_blank">
-        <img css={imgStyles} src={img} />
+      <a
+        href="https://github.com/y4shiro"
+        target="_blank"
+        aria-label="GitHubページへ移動"
+      >
+        <img css={imgStyles} src={img} alt="GitHub Contribute Graph" />
       </a>
     </section>
   );
