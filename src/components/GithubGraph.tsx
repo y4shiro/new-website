@@ -1,16 +1,24 @@
+import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 
 const GithubGraph: React.FC = () => {
+  const [img, setImg] = useState('');
   const firebaseConfig = {
     storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
     storageToken: process.env.GATSBY_FIREBASE_STORAGE_TOKEN,
   };
   const imgSrc = `https://firebasestorage.googleapis.com/v0/b/${firebaseConfig.storageBucket}/o/y4shiro.svg?alt=media&token=${firebaseConfig.storageToken}`;
 
+  useEffect(() => {
+    fetch(imgSrc, { mode: 'cors' })
+      .then((res) => res.blob())
+      .then((image) => setImg(URL.createObjectURL(image)));
+  }, []);
+
   return (
     <section>
       <a href="https://github.com/y4shiro" target="_blank">
-        <img css={imgStyles} src={imgSrc} />
+        <img css={imgStyles} src={img} />
       </a>
     </section>
   );
