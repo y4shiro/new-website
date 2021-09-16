@@ -1,10 +1,5 @@
 import { css } from '@emotion/react';
 
-export const sectionTitle = css`
-  text-align: center;
-  font-size: 2rem;
-`;
-
 // Bootstrap のブレイクポイント
 // 暫定的にこちらを採用中
 export const breakpoints = {
