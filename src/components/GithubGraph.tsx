@@ -21,13 +21,15 @@ const GithubGraph: React.FC = () => {
         target="_blank"
         aria-label="GitHubページへ移動"
       >
-        <img
-          css={imgStyles}
-          src={img}
-          width="712"
-          height="140"
-          alt="GitHub Contribute Graph"
-        />
+        {img && (
+          <img
+            css={imgStyles}
+            src={img}
+            width="712"
+            height="140"
+            alt="GitHub Contribute Graph"
+          />
+        )}
       </a>
     </section>
   );
