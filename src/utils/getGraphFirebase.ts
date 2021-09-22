@@ -11,7 +11,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
-const storageRef = ref(storage, 'test.svg');
+const storageRef = ref(storage, 'github_graph.svg');
 
 const getGraphImage = async (): Promise<string | undefined> => {
   try {
