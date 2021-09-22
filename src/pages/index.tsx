@@ -10,6 +10,7 @@ import About from '../components/About';
 import Skills from '../components/Skills/Skills';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import GithubGraph from 'src/components/GithubGraph';
 
 const IndexPage: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage: React.FC = () => {
 
       <main css={wrapper}>
         <About />
+        <GithubGraph />
         <Skills />
         <Contact />
       </main>
