@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 
+import { getGraphImage } from 'src/utils/getGraphFirebase';
+
 const GithubGraph: React.FC = () => {
   const [img, setImg] = useState('');
-  const firebaseConfig = {
-    storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
-    storageToken: process.env.GATSBY_FIREBASE_STORAGE_TOKEN,
-  };
-  const imgSrc = `https://firebasestorage.googleapis.com/v0/b/${firebaseConfig.storageBucket}/o/y4shiro.svg?alt=media&token=${firebaseConfig.storageToken}`;
 
   useEffect(() => {
-    fetch(imgSrc, { mode: 'cors' })
-      .then((res) => res.blob())
-      .then((image) => setImg(URL.createObjectURL(image)));
+    const getImg = async () => {
+      const img: string | undefined = await getGraphImage();
+      if (img !== undefined) setImg(img);
+    };
+    getImg();
   }, []);
 
   return (
