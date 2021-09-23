@@ -1,6 +1,6 @@
 # website
 
-[![CI](https://github.com/y4shiro/website/actions/workflows/ci.yml/badge.svg)](https://github.com/y4shiro/website/actions/workflows/ci.yml)
+[![Lighthouse-CI](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml)
 
 ポートフォリオサイトのリポジトリです  
 ブログにはしない予定
