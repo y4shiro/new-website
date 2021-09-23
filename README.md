@@ -1,9 +1,9 @@
 # website
 
+[y4shiro.net](https://y4shiro.net/)
+
 ポートフォリオサイトのリポジトリです  
 ブログにはしない予定
-
-[y4shiro.net](https://y4shiro.net/)
 
 ## Lighthouse CI
 
