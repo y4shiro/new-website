@@ -4,8 +4,7 @@ jobs:
   lhci:
     name: Lighthouse
     runs-on: ubuntu-latest
-    environment:
-      name: Firebase
+    environment: Firebase
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 12.x
