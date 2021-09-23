@@ -1,11 +1,16 @@
 # website
 
-[![Lighthouse-CI](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml)
-
 ポートフォリオサイトのリポジトリです  
 ブログにはしない予定
 
 [y4shiro.net](https://y4shiro.net/)
+
+## Lighthouse-CI
+
+[![Lighthouse-CI](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/y4shiro/website/actions/workflows/lighthouse-ci.yml)
+
+Lighthouse-CI Server を Heroku にデプロイしているので、スコア履歴を参照できる  
+https://rocky-caverns-87987.herokuapp.com/app/projects/website/dashboard
 
 ## 環境
 
