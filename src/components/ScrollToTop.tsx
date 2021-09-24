@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 import smoothscroll from 'smoothscroll-polyfill';
 
-smoothscroll.polyfill();
-
 const ScrollToTop: React.FC = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -12,6 +10,8 @@ const ScrollToTop: React.FC = () => {
   };
 
   useEffect(() => {
+    smoothscroll.polyfill();
+
     const checkScrollHeight = () => {
       if (window.scrollY > window.innerHeight) setShowButton(true);
       else setShowButton(false);
