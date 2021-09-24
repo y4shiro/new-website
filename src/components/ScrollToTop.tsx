@@ -21,7 +21,8 @@ const buttonStyles = css`
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: #fff;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+
   cursor: pointer;
   position: fixed;
   bottom: 50px;
