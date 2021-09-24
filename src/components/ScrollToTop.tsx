@@ -26,7 +26,7 @@ const ScrollToTop: React.FC = () => {
   return (
     <>
       <button css={buttonStyles(showButton)} onClick={buttonClickHandler}>
-        <span>&gt;</span>
+        <div></div>
       </button>
     </>
   );
@@ -40,6 +40,7 @@ const buttonStyles = (isShowButton: boolean) => {
   return css`
     width: 48px;
     height: 48px;
+    padding: 0;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -61,10 +62,23 @@ const buttonStyles = (isShowButton: boolean) => {
       transform: translateY(-2px);
     }
 
-    & span {
-      display: inline-block;
-      font-size: 2rem;
-      transform: rotate(-90deg);
+    & > div {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 0px;
+        border-top: solid 4px #666;
+        border-right: solid 4px #666;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        margin-top: -4px;
+      }
     }
   `;
 };
