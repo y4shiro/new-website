@@ -3,8 +3,6 @@ import { css } from '@emotion/react';
 
 const ScrollToTop: React.FC = () => {
   const buttonClickHandler = () => {
-    console.log('トップに戻るボタンを押した');
-
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -20,6 +18,10 @@ const ScrollToTop: React.FC = () => {
 const buttonStyles = css`
   width: 48px;
   height: 48px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #fff;
   cursor: pointer;
   position: fixed;
   bottom: 50px;
