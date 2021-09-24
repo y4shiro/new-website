@@ -11,16 +11,31 @@ const ScrollToTop: React.FC = () => {
   return (
     <>
       <button css={buttonStyles} onClick={buttonClickHandler}>
-        トップに戻る
+        <span>&gt;</span>
       </button>
     </>
   );
 };
 
 const buttonStyles = css`
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  right: 16px;
+  opacity: 0.75;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & span {
+    display: inline-block;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+  }
 `;
 
 export default ScrollToTop;
