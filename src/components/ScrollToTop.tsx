@@ -21,17 +21,20 @@ const buttonStyles = css`
   border: none;
   outline: none;
   border-radius: 4px;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f9f9f9;
 
   cursor: pointer;
   position: fixed;
   bottom: 50px;
   right: 16px;
   opacity: 0.75;
-  transition: opacity 0.3s;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
 
   &:hover {
     opacity: 1;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
   }
 
   & span {
