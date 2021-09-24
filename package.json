@@ -31,12 +31,14 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-svg": "^14.0.9"
+    "react-svg": "^14.0.9",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@types/react-helmet": "^6.1.2",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "gatsby-plugin-root-import": "^2.0.7",
     "typescript": "^4.3.5"
   }

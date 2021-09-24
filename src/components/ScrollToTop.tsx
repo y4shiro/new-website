@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 const ScrollToTop: React.FC = () => {
   const [showButton, setShowButton] = useState(false);
