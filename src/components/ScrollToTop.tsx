@@ -35,6 +35,7 @@ const ScrollToTop: React.FC = () => {
 const buttonStyles = (isShowButton: boolean) => {
   const opacityVal = isShowButton ? 0.75 : 0;
   const pointerEventsVal = isShowButton ? 'auto' : 'none';
+  const visibleVal = isShowButton ? 'visible' : 'hidden';
 
   return css`
     width: 48px;
@@ -50,6 +51,7 @@ const buttonStyles = (isShowButton: boolean) => {
     bottom: 50px;
     right: 16px;
     opacity: ${opacityVal};
+    visibility: ${visibleVal};
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
 
