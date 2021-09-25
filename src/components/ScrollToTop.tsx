@@ -54,14 +54,14 @@ const buttonStyles = (isShowButton: boolean) => {
     pointer-events: ${pointerEventsVal};
     position: fixed;
     bottom: 16px;
-    right: 16px;
+    right: 24px;
     opacity: ${opacityVal};
     visibility: ${visibleVal};
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
 
     @media (min-width: ${breakpoints.sm}px) {
-      bottom: 16px;
+      bottom: 84px;
       right: 16px;
     }
 
