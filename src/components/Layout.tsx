@@ -1,6 +1,7 @@
 import React from 'react';
 import { Global, css } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
+import ScrollToTop from './ScrollToTop';
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout: React.FC = ({ children }) => {
         `}
       ></Global>
       {children}
+      <ScrollToTop />
     </>
   );
 };
