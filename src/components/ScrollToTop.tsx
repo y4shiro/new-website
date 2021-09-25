@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 import smoothscroll from 'smoothscroll-polyfill';
+import { breakpoints } from 'src/styles/styles';
 
 const ScrollToTop: React.FC = () => {
   const [showButton, setShowButton] = useState(false);
@@ -52,12 +53,17 @@ const buttonStyles = (isShowButton: boolean) => {
     cursor: pointer;
     pointer-events: ${pointerEventsVal};
     position: fixed;
-    bottom: 50px;
+    bottom: 16px;
     right: 16px;
     opacity: ${opacityVal};
     visibility: ${visibleVal};
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
+
+    @media (min-width: ${breakpoints.sm}px) {
+      bottom: 16px;
+      right: 16px;
+    }
 
     &:hover {
       opacity: 1;

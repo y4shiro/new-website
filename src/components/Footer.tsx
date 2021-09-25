@@ -34,7 +34,7 @@ const ulStyles = css`
   flex-direction: column-reverse;
   align-items: center;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   color: #ddd;
   font-size: 0.8rem;
 
@@ -59,10 +59,10 @@ const ulStyles = css`
   }
 
   @media (min-width: ${breakpoints.sm}px) {
-    width: 90%;
+    width: 85%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 
     // GitHub リンクの bottom margin を打ち消す
     li:last-of-type {
