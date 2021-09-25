@@ -53,7 +53,7 @@ const buttonStyles = (isShowButton: boolean) => {
     cursor: pointer;
     pointer-events: ${pointerEventsVal};
     position: fixed;
-    bottom: 16px;
+    bottom: 24px;
     right: 24px;
     opacity: ${opacityVal};
     visibility: ${visibleVal};
