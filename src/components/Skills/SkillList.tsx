@@ -26,7 +26,7 @@ type SkillList = {
 const SkillList: React.FC<Margin & SkillList> = ({ margin, title, list }) => {
   return (
     <>
-      <h3 css={skillTitleStyle}>{title}</h3>
+      <h3>{title}</h3>
       <ul css={[ulStyles, marginStyle({ margin })]}>
         {list.map((skill) => (
           <SkillItem {...skill} key={skill.name} />
@@ -35,9 +35,6 @@ const SkillList: React.FC<Margin & SkillList> = ({ margin, title, list }) => {
     </>
   );
 };
-const skillTitleStyle = css`
-  margin-bottom: 1rem;
-`;
 
 // 親からマージンの指定を受ける
 // 何も指定がない場合は margin: 0;

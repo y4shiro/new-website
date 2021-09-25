@@ -11,6 +11,7 @@ const Layout: React.FC = ({ children }) => {
           ${emotionNormalize}
           ${globalStyles}
           ${h2Styles}
+          ${h3Styles}
         `}
       ></Global>
       {children}
@@ -43,9 +44,18 @@ const h2Styles = css`
       height: 2px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #ff5a5f;
+      background-color: black;
       border-radius: 2px;
     }
+  }
+`;
+
+const h3Styles = css`
+  h3 {
+    width: 25%;
+    padding: 0.5rem;
+    background-color: #fafafa;
+    border-left: solid 4px black;
   }
 `;
 
