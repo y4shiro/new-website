@@ -33,6 +33,9 @@ const ScrollToTop: React.FC = () => {
 };
 
 const buttonStyles = (isShowButton: boolean) => {
+  const whiteColor = '#f9f9f9';
+  const blackColor = '#666';
+
   const opacityVal = isShowButton ? 0.75 : 0;
   const pointerEventsVal = isShowButton ? 'auto' : 'none';
   const visibleVal = isShowButton ? 'visible' : 'hidden';
@@ -44,7 +47,7 @@ const buttonStyles = (isShowButton: boolean) => {
     border: none;
     outline: none;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: ${whiteColor};
 
     cursor: pointer;
     pointer-events: ${pointerEventsVal};
@@ -53,12 +56,12 @@ const buttonStyles = (isShowButton: boolean) => {
     right: 16px;
     opacity: ${opacityVal};
     visibility: ${visibleVal};
-    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
 
     &:hover {
       opacity: 1;
-      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.25);
       transform: translateY(-2px);
     }
 
@@ -70,8 +73,8 @@ const buttonStyles = (isShowButton: boolean) => {
         width: 16px;
         height: 16px;
         border: 0px;
-        border-top: solid 4px #666;
-        border-right: solid 4px #666;
+        border-top: solid 4px ${blackColor};
+        border-right: solid 4px ${blackColor};
         border-radius: 2px;
         transform: rotate(-45deg);
         position: absolute;
