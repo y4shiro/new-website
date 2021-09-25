@@ -64,6 +64,9 @@ const h3Styles = css`
       margin: 0.5rem 0;
       width: 25%;
     }
+    @media (min-width: ${breakpoints.lg}px) {
+      width: 20%;
+    }
   }
 `;
 
