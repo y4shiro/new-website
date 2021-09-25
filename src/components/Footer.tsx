@@ -59,7 +59,7 @@ const ulStyles = css`
   }
 
   @media (min-width: ${breakpoints.sm}px) {
-    width: 85%;
+    width: 83%;
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 0;
