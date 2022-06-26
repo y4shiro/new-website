@@ -18,15 +18,21 @@ const thumbSrc = `../../images/sunset.png`;
 const ProductItem: React.FC<Skill> = ({ name, description }) => {
   return (
     <li css={liStyles()}>
-      <h4>
-        <span>{name}</span>
-      </h4>
-      <StaticImage
-        src={thumbSrc}
-        layout="constrained"
-        alt="プロダクトのサムネイル"
-      />
-      {description ? <p>{description}</p> : null}
+      <a
+        href="https://sunset-time-notify.y4shiro.net/"
+        target="_blank"
+        aria-label="プロダクトページへ移動"
+      >
+        <h4>
+          <span>{name}</span>
+        </h4>
+        <StaticImage
+          src={thumbSrc}
+          layout="constrained"
+          alt="プロダクトのサムネイル"
+        />
+        {description ? <p>{description}</p> : null}
+      </a>
     </li>
   );
 };
