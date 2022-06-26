@@ -59,6 +59,16 @@
         "iconColor": "#319795"
       },
       {
+        "name": "ESLint",
+        "iconFileName": "eslint",
+        "iconColor": "#4B32C3"
+      },
+      {
+        "name": "Prettier",
+        "iconFileName": "prettier",
+        "iconColor": "#F7B93E"
+      },
+      {
         "name": "Vue.js",
         "iconFileName": "vuedotjs",
         "iconColor": "#4FC08D"
