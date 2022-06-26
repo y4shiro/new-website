@@ -24,14 +24,39 @@
         "iconColor": "#1572B6"
       },
       {
-        "name": "React.js",
+        "name": "React",
         "iconFileName": "react",
         "iconColor": "#61DAFB"
+      },
+      {
+        "name": "Next.js",
+        "iconFileName": "nextdotjs",
+        "iconColor": "#666"
       },
       {
         "name": "Gatsby",
         "iconFileName": "gatsby",
         "iconColor": "#663399"
+      },
+      {
+        "name": "Jest",
+        "iconFileName": "jest",
+        "iconColor": "#C21325"
+      },
+      {
+        "name": "Testing Library",
+        "iconFileName": "testinglibrary",
+        "iconColor": "#E33332"
+      },
+      {
+        "name": "React Query",
+        "iconFileName": "reactquery",
+        "iconColor": "#FF4154"
+      },
+      {
+        "name": "Chakra UI",
+        "iconFileName": "chakraui",
+        "iconColor": "#319795"
       },
       {
         "name": "Vue.js",
