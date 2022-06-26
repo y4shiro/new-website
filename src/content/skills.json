@@ -69,16 +69,6 @@
     "title": "Backend / DB",
     "list": [
       {
-        "name": "Ruby",
-        "iconFileName": "ruby",
-        "iconColor": "#CC342D"
-      },
-      {
-        "name": "Ruby on Rails",
-        "iconFileName": "rubyonrails",
-        "iconColor": "#CC0000"
-      },
-      {
         "name": "Node.js",
         "iconFileName": "nodedotjs",
         "iconColor": "#339933"
@@ -87,6 +77,16 @@
         "name": "Express",
         "iconFileName": "express",
         "iconColor": "#000000"
+      },
+      {
+        "name": "Ruby",
+        "iconFileName": "ruby",
+        "iconColor": "#CC342D"
+      },
+      {
+        "name": "Ruby on Rails",
+        "iconFileName": "rubyonrails",
+        "iconColor": "#CC0000"
       },
       {
         "name": "PHP",
