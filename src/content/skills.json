@@ -112,6 +112,11 @@
         "name": "PostgreSQL",
         "iconFileName": "postgresql",
         "iconColor": "#4169E1"
+      },
+      {
+        "name": "Docker",
+        "iconFileName": "docker",
+        "iconColor": "#2496ED"
       }
     ]
   },
