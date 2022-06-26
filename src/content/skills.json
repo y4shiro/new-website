@@ -119,14 +119,14 @@
         "iconColor": "#F38020"
       },
       {
-        "name": "Netlify",
-        "iconFileName": "netlify",
-        "iconColor": "#00C7B7"
-      },
-      {
         "name": "Firebase",
         "iconFileName": "firebase",
         "iconColor": "#FFCA28"
+      },
+      {
+        "name": "Netlify",
+        "iconFileName": "netlify",
+        "iconColor": "#00C7B7"
       }
     ]
   },
