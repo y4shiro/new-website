@@ -21,7 +21,7 @@ const IndexPage: React.FC = () => {
 
       <main css={wrapper}>
         <About />
-        {/* <GithubGraph /> */}
+        <GithubGraph />
         <Skills />
         <Contact />
       </main>
