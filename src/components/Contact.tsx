@@ -18,6 +18,11 @@ const Contact: React.FC = () => {
           </a>
         </li>
         <li>
+          <a href="https://twitter.com/y4shiro_" target="_blank">
+            <ReactSVG src="/contact/twitter.svg" css={svgStyle('#1DA1F2')} />
+          </a>
+        </li>
+        <li>
           <a href="https://ram.hatenablog.jp/" target="_blank">
             <ReactSVG
               src="/contact/hatenabookmark.svg"
