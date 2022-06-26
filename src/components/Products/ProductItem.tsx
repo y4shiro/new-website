@@ -52,6 +52,11 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
     box-shadow: 2px 2px 5px 4px #ddd;
     transition: all 0.3s ease-in-out;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     h4 {
       margin: 1rem 0 1.5rem;
       font-size: 1.5rem;
