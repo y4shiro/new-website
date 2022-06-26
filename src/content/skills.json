@@ -195,6 +195,16 @@
         "name": "GitHub",
         "iconFileName": "github",
         "iconColor": "#181717"
+      },
+      {
+        "name": "Figma",
+        "iconFileName": "figma",
+        "iconColor": "#F24E1E"
+      },
+      {
+        "name": "Adobe XD",
+        "iconFileName": "adobexd",
+        "iconColor": "#FF61F6"
       }
     ]
   }
