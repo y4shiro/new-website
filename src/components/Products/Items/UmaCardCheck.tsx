@@ -11,7 +11,7 @@ type Props = {
 // SkillItem (カード) の背景色
 const ItemBgColor = '#fafafa';
 
-const thumbSrc = '../../../images/products/icon.png';
+const thumbSrc = '../../../images/products/horseshoe.png';
 
 const UmaCardCheck: React.FC<Props> = ({ imageStyles }) => {
   const name = 'ウマ娘サポカ編成支援(仮)';
