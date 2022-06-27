@@ -16,34 +16,34 @@ https://rocky-caverns-87987.herokuapp.com/app/projects/website/dashboard
 
 ### ローカル
 
-- Node.js v14.15.1
-- npm 7.14.0
-- Git 2.31.1
+- Node.js v16.13.2
+- npm 8.1.2
+- Git 2.35.1
 
 ### npm
 
 詳細は package.json を参照
 
-- Gatsby 3.8.1
+- Gatsby 4.17.1
 - React 17.0.1
-- TypeScript 4.3.5
-- Emotion 11.4
+- TypeScript 4.7.4
+- @emotion/react 11.9.3
 
 ### Gatsby-plugin
 
-- gatsby-plugin-emotion 6.9.0
-- gatsby-plugin-google-analytics 3.9.0
-- gatsby-plugin-react-helmet 4.13.0
+- gatsby-plugin-emotion 7.17.0
+- gatsby-plugin-google-analytics 4.17.0
+- gatsby-plugin-react-helmet 5.17.0
 
 上記は元々 npm で公開されているパッケージを Gatsby で導入しやすくしたもの
 
-- gatsby-source-filesystem 3.12.0
+- gatsby-source-filesystem 4.17.0
 
 Gatsby でローカルファイル等からデータを取得し、 GraphQL で扱えるようにするプラグイン
 
-- gatsby-plugin-image 1.9.0
-- gatsby-plugin-sharp 3.9.0
-- gatsby-transformer-sharp 3.9.0
+- gatsby-plugin-image 2.17.0
+- gatsby-plugin-sharp 4.17.0
+- gatsby-transformer-sharp 4.17.0
 
 Gatsby 公式の画像処理系プラグイン  
 画像を読み込んで GraphQL で読み込んだり、ページの幅に合わせて画像サイズを最適化したり
@@ -74,7 +74,7 @@ GATSBY_FIREBASE_APP_ID='<Your_App_Id>'
 下記コマンドでローカルサーバが立ち上がる
 
 ```bash
-$ gatsby develop
+$ npm run develop
 ```
 
 ## 本番公開用ファイルのビルド
@@ -87,7 +87,7 @@ $ gatsby develop
 ただ、ホスティングサービスとリポジトリを連携してビルド/デプロイを自動で行うほうが圧倒的に楽
 
 ```bash
-$ gatsby build
+$ npm run build
 ```
 
 ## ホスティングサービスと連携 / デプロイ
