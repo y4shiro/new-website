@@ -2,7 +2,8 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { breakpoints } from 'src/styles/styles';
 
-import ProductItem from './ProductItem';
+import SunsetTimeNotify from './Items/SunsetTimeNotify';
+import UmaCardCheck from './Items/UmaCardCheck';
 
 const Products: React.FC = () => {
   return (
@@ -10,12 +11,11 @@ const Products: React.FC = () => {
       <h2>Products</h2>
 
       <ul css={[ulStyles]}>
-        <ProductItem
+        <SunsetTimeNotify
           name={'Sunset Time Notify'}
           description="Sunset Time Notify の説明"
         />
-        <ProductItem name={'b'} description="bの説明" />
-        <ProductItem name={'c'} description="cの説明" />
+        <UmaCardCheck />
       </ul>
     </section>
   );
