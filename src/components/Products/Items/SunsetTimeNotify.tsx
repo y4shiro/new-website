@@ -13,14 +13,11 @@ type Props = {
 
 // SkillItem (カード) の背景色
 const ItemBgColor = '#fafafa';
-
 const thumbSrc = '../../../images/products/sunset.png';
+const description =
+  '任意地点の地名を表示し、日の出日の入時刻とその時刻までのカウントダウンを行う Web アプリ';
 
-const SunsetTimeNotify: React.FC<Props> = ({
-  name,
-  description,
-  imageStyles,
-}) => {
+const SunsetTimeNotify: React.FC<Props> = ({ name, imageStyles }) => {
   return (
     <li css={liStyles()}>
       <a
@@ -87,6 +84,14 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
           transform-origin: left;
           transition: all 0.3s ease-in-out;
         }
+      }
+    }
+
+    p {
+      padding: 0 1rem 0;
+      font-size: 0.75rem;
+      @media (min-width: ${breakpoints.sm}px) {
+        font-size: 1rem;
       }
     }
 

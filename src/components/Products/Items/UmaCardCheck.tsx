@@ -12,10 +12,10 @@ type Props = {
 const ItemBgColor = '#fafafa';
 
 const thumbSrc = '../../../images/products/horseshoe.png';
+const name = 'ウマ娘サポカ編成支援(仮)';
+const description = `ウマ娘のサポカ編成時、そのデッキのレスボ等の各パラメータや取得可能スキルを一覧表示する Web アプリ`;
 
 const UmaCardCheck: React.FC<Props> = ({ imageStyles }) => {
-  const name = 'ウマ娘サポカ編成支援(仮)';
-  const description = `${name} の説明文`;
   return (
     <li css={liStyles()}>
       <a href="#" target="_blank" aria-label="プロダクトページへ移動">
@@ -78,6 +78,14 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
           transform-origin: left;
           transition: all 0.3s ease-in-out;
         }
+      }
+    }
+
+    p {
+      padding: 0 1rem 0;
+      font-size: 0.75rem;
+      @media (min-width: ${breakpoints.sm}px) {
+        font-size: 1rem;
       }
     }
 
