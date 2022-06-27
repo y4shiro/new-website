@@ -5,12 +5,15 @@ import { breakpoints } from 'src/styles/styles';
 import hex2rgba from 'src/utils/hex2rgba';
 import { StaticImage } from 'gatsby-plugin-image';
 
+type Props = {
+  imageStyles?: any;
+};
 // SkillItem (カード) の背景色
 const ItemBgColor = '#fafafa';
 
 const thumbSrc = '../../../images/products/icon.png';
 
-const UmaCardCheck: React.FC = () => {
+const UmaCardCheck: React.FC<Props> = ({ imageStyles }) => {
   const name = 'ウマ娘サポカ編成支援(仮)';
   const description = `${name} の説明文`;
   return (
@@ -20,6 +23,7 @@ const UmaCardCheck: React.FC = () => {
           <span>{name}</span>
         </h4>
         <StaticImage
+          css={imageStyles}
           src={thumbSrc}
           layout="constrained"
           alt="プロダクトのサムネイル"
@@ -52,10 +56,10 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
 
     h4 {
       margin: 1rem 0 1.5rem;
-      font-size: 1.5rem;
+      font-size: 0.9rem;
 
       @media (min-width: ${breakpoints.sm}px) {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
 
       & > span {

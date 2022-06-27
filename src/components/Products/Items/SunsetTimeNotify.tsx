@@ -5,9 +5,10 @@ import { breakpoints } from 'src/styles/styles';
 import hex2rgba from 'src/utils/hex2rgba';
 import { StaticImage } from 'gatsby-plugin-image';
 
-type Skill = {
+type Props = {
   name: string;
   description?: string;
+  imageStyles?: any;
 };
 
 // SkillItem (カード) の背景色
@@ -15,7 +16,11 @@ const ItemBgColor = '#fafafa';
 
 const thumbSrc = '../../../images/products/sunset.png';
 
-const SunsetTimeNotify: React.FC<Skill> = ({ name, description }) => {
+const SunsetTimeNotify: React.FC<Props> = ({
+  name,
+  description,
+  imageStyles,
+}) => {
   return (
     <li css={liStyles()}>
       <a
@@ -27,6 +32,7 @@ const SunsetTimeNotify: React.FC<Skill> = ({ name, description }) => {
           <span>{name}</span>
         </h4>
         <StaticImage
+          css={imageStyles}
           src={thumbSrc}
           layout="constrained"
           alt="プロダクトのサムネイル"
@@ -59,10 +65,10 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
 
     h4 {
       margin: 1rem 0 1.5rem;
-      font-size: 1.5rem;
+      font-size: 0.9rem;
 
       @media (min-width: ${breakpoints.sm}px) {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
 
       & > span {
