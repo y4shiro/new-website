@@ -8,8 +8,8 @@ const Contact: React.FC = () => {
       <h2>Contact</h2>
       <ul css={ulStyle}>
         <li>
-          <a href="mailto:y4shironao@gmail.com" target="_blank">
-            <ReactSVG src="/contact/gmail.svg" css={svgStyle('#EA4335')} />
+          <a href="https://twitter.com/y4shiro_" target="_blank">
+            <ReactSVG src="/contact/twitter.svg" css={svgStyle('#1DA1F2')} />
           </a>
         </li>
         <li>
@@ -18,8 +18,8 @@ const Contact: React.FC = () => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/y4shiro_" target="_blank">
-            <ReactSVG src="/contact/twitter.svg" css={svgStyle('#1DA1F2')} />
+          <a href="mailto:y4shironao@gmail.com" target="_blank">
+            <ReactSVG src="/contact/gmail.svg" css={svgStyle('#EA4335')} />
           </a>
         </li>
         <li>
