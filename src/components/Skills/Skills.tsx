@@ -4,7 +4,7 @@ import SkillList from './SkillList';
 import skills from 'src/content/skills.json';
 
 const Skills: React.FC = () => {
-  const marginParams = { bottom: 64 };
+  const marginParams = { bottom: 48 };
 
   return (
     <section>

@@ -7,10 +7,11 @@ import Layout from '../components/Layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import GithubGraph from 'src/components/GithubGraph';
 import Skills from '../components/Skills/Skills';
+import Products from 'src/components/Products';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import GithubGraph from 'src/components/GithubGraph';
 
 const IndexPage: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const IndexPage: React.FC = () => {
         <About />
         <GithubGraph />
         <Skills />
+        <Products />
         <Contact />
       </main>
 

@@ -1,42 +1,40 @@
 import React from 'react';
-import { ReactSVG } from 'react-svg';
 import { css } from '@emotion/react';
 import { breakpoints } from 'src/styles/styles';
 
 import hex2rgba from 'src/utils/hex2rgba';
+import { StaticImage } from 'gatsby-plugin-image';
 
-type Skill = {
-  name: string;
-  iconFileName: string;
-  iconColor?: string;
-  iconBgColor?: string;
-  description?: string;
+type Props = {
+  imageStyles?: any;
 };
-
 // SkillItem (カード) の背景色
 const ItemBgColor = '#fafafa';
 
-const SkillItem: React.FC<Skill> = ({
-  name,
-  iconFileName,
-  iconColor = '#000000',
-  iconBgColor = ItemBgColor,
-  description,
-}) => {
-  const iconSrc = `/skillIcons/${iconFileName}.svg`;
+const thumbSrc = '../../../images/products/horseshoe.png';
+const name = 'ウマ娘サポカ編成支援(仮)';
+const description = `ウマ娘のサポカ編成時、そのデッキのレスボ等の各パラメータや取得可能スキルを一覧表示する Web アプリ`;
 
+const UmaCardCheck: React.FC<Props> = ({ imageStyles }) => {
   return (
-    <li css={liStyles(iconColor, iconBgColor)}>
-      <h4>
-        <span>{name}</span>
-      </h4>
-      <ReactSVG src={iconSrc} />
-      {description ? <p>{description}</p> : null}
+    <li css={liStyles()}>
+      <a href="#" target="_blank" aria-label="プロダクトページへ移動">
+        <h4>
+          <span>{name}</span>
+        </h4>
+        <StaticImage
+          css={imageStyles}
+          src={thumbSrc}
+          layout="constrained"
+          alt="プロダクトのサムネイル"
+        />
+        {description ? <p>{description}</p> : null}
+      </a>
     </li>
   );
 };
 
-const liStyles = (iconColor: string, iconBgColor: string) => {
+const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
   // アイコンの色に応じたホバー時のボーダー色を決める
   const borderColor = hex2rgba(iconColor, 0.7);
   const hoverBorderColorParams = `solid 1px rgba(${borderColor})`;
@@ -51,13 +49,18 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     box-shadow: 2px 2px 5px 4px #ddd;
     transition: all 0.3s ease-in-out;
 
+    a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
     h4 {
-      margin: 0.5rem 0 0.5rem;
+      margin: 1rem 0 1.5rem;
       font-size: 0.9rem;
 
       @media (min-width: ${breakpoints.sm}px) {
-        margin: 1rem 0 0.5rem;
-        font-size: 1rem;
+        font-size: 1.4rem;
       }
 
       & > span {
@@ -78,20 +81,11 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
       }
     }
 
-    // 子要素(SVG アイコン)のスタイル定義
-    svg {
-      margin: 4px auto;
-      padding: 0;
-      width: 48px;
-      background-color: ${iconBgColor};
-      fill: ${iconColor};
-      transition: all 0.3s ease-out;
-
+    p {
+      padding: 0 1rem 0;
+      font-size: 0.75rem;
       @media (min-width: ${breakpoints.sm}px) {
-        margin: 12px auto;
-        width: 56px;
-        background-color: ${ItemBgColor};
-        fill: black;
+        font-size: 1rem;
       }
     }
 
@@ -100,13 +94,6 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
       box-shadow: 5px 5px 5px 4px #ccc;
       transform: translateY(-2%);
 
-      // 親要素をホバーしたときに子要素の色を変更
-      // デフォの背景色と色の相性が悪いテーマカラーの場合は skills.json 側で背景色を個別設定
-      svg {
-        background-color: ${iconBgColor};
-        fill: ${iconColor};
-      }
-
       h4 > span::after {
         transform: scale(1.1, 1);
       }
@@ -114,4 +101,4 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
   `;
 };
 
-export default SkillItem;
+export default UmaCardCheck;

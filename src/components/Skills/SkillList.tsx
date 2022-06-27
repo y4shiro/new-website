@@ -59,13 +59,13 @@ const ulStyles = css`
   gap: 1rem;
 
   @media (min-width: ${breakpoints.sm}px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media (min-width: ${breakpoints.lg}px) {
     grid-template-columns: repeat(5, 1fr);
   }
-  @media (min-width: ${breakpoints.xl}px) {
+  @media (min-width: ${breakpoints.lg}px) {
     grid-template-columns: repeat(6, 1fr);
+  }
+  @media (min-width: ${breakpoints.xl}px) {
+    grid-template-columns: repeat(7, 1fr);
   }
 `;
 

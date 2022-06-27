@@ -24,14 +24,49 @@
         "iconColor": "#1572B6"
       },
       {
-        "name": "React.js",
+        "name": "React",
         "iconFileName": "react",
         "iconColor": "#61DAFB"
+      },
+      {
+        "name": "Next.js",
+        "iconFileName": "nextdotjs",
+        "iconColor": "#666"
       },
       {
         "name": "Gatsby",
         "iconFileName": "gatsby",
         "iconColor": "#663399"
+      },
+      {
+        "name": "Jest",
+        "iconFileName": "jest",
+        "iconColor": "#C21325"
+      },
+      {
+        "name": "Testing Library",
+        "iconFileName": "testinglibrary",
+        "iconColor": "#E33332"
+      },
+      {
+        "name": "React Query",
+        "iconFileName": "reactquery",
+        "iconColor": "#FF4154"
+      },
+      {
+        "name": "Chakra UI",
+        "iconFileName": "chakraui",
+        "iconColor": "#319795"
+      },
+      {
+        "name": "ESLint",
+        "iconFileName": "eslint",
+        "iconColor": "#4B32C3"
+      },
+      {
+        "name": "Prettier",
+        "iconFileName": "prettier",
+        "iconColor": "#F7B93E"
       },
       {
         "name": "Vue.js",
@@ -44,16 +79,6 @@
     "title": "Backend / DB",
     "list": [
       {
-        "name": "Ruby",
-        "iconFileName": "ruby",
-        "iconColor": "#CC342D"
-      },
-      {
-        "name": "Ruby on Rails",
-        "iconFileName": "rubyonrails",
-        "iconColor": "#CC0000"
-      },
-      {
         "name": "Node.js",
         "iconFileName": "nodedotjs",
         "iconColor": "#339933"
@@ -62,6 +87,16 @@
         "name": "Express",
         "iconFileName": "express",
         "iconColor": "#000000"
+      },
+      {
+        "name": "Ruby",
+        "iconFileName": "ruby",
+        "iconColor": "#CC342D"
+      },
+      {
+        "name": "Ruby on Rails",
+        "iconFileName": "rubyonrails",
+        "iconColor": "#CC0000"
       },
       {
         "name": "PHP",
@@ -77,6 +112,11 @@
         "name": "PostgreSQL",
         "iconFileName": "postgresql",
         "iconColor": "#4169E1"
+      },
+      {
+        "name": "Docker",
+        "iconFileName": "docker",
+        "iconColor": "#2496ED"
       }
     ]
   },
@@ -94,14 +134,14 @@
         "iconColor": "#F38020"
       },
       {
-        "name": "Netlify",
-        "iconFileName": "netlify",
-        "iconColor": "#00C7B7"
-      },
-      {
         "name": "Firebase",
         "iconFileName": "firebase",
         "iconColor": "#FFCA28"
+      },
+      {
+        "name": "Netlify",
+        "iconFileName": "netlify",
+        "iconColor": "#00C7B7"
       }
     ]
   },
@@ -160,6 +200,16 @@
         "name": "GitHub",
         "iconFileName": "github",
         "iconColor": "#181717"
+      },
+      {
+        "name": "Figma",
+        "iconFileName": "figma",
+        "iconColor": "#F24E1E"
+      },
+      {
+        "name": "Adobe XD",
+        "iconFileName": "adobexd",
+        "iconColor": "#FF61F6"
       }
     ]
   }
