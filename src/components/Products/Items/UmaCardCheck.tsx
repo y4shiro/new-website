@@ -15,11 +15,7 @@ const UmaCardCheck: React.FC = () => {
   const description = `${name} の説明文`;
   return (
     <li css={liStyles()}>
-      <a
-        href="https://sunset-time-notify.y4shiro.net/"
-        target="_blank"
-        aria-label="プロダクトページへ移動"
-      >
+      <a href="#" target="_blank" aria-label="プロダクトページへ移動">
         <h4>
           <span>{name}</span>
         </h4>
