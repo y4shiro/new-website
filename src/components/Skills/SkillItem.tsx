@@ -52,10 +52,11 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
     transition: all 0.3s ease-in-out;
 
     h4 {
-      margin: 1rem 0 0.5rem;
+      margin: 0.5rem 0 0.5rem;
       font-size: 0.9rem;
 
       @media (min-width: ${breakpoints.sm}px) {
+        margin: 1rem 0 0.5rem;
         font-size: 1rem;
       }
 
@@ -79,7 +80,7 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
 
     // 子要素(SVG アイコン)のスタイル定義
     svg {
-      margin: 16px auto;
+      margin: 4px auto;
       padding: 0;
       width: 48px;
       background-color: ${iconBgColor};
@@ -87,7 +88,8 @@ const liStyles = (iconColor: string, iconBgColor: string) => {
       transition: all 0.3s ease-out;
 
       @media (min-width: ${breakpoints.sm}px) {
-        width: 64px;
+        margin: 12px auto;
+        width: 56px;
         background-color: ${ItemBgColor};
         fill: black;
       }

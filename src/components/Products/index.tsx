@@ -44,6 +44,7 @@ const ulStyles = css`
 
 const imageStyles = css`
   width: 64px;
+  border-radius: 8px;
   @media (min-width: ${breakpoints.sm}px) {
     width: 96px;
   }
