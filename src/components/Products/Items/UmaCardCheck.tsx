@@ -50,6 +50,7 @@ const liStyles = (iconColor: string = '#000', iconBgColor: string = '#000') => {
     transition: all 0.3s ease-in-out;
 
     a {
+      display: block;
       color: inherit;
       text-decoration: none;
     }
