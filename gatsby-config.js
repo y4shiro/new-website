@@ -13,9 +13,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId: 'UA-76076401-1',
+        trackingIds: ['G-9JG96YYPVJ'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     'gatsby-plugin-react-helmet',
